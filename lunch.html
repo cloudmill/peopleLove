@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Case__fly</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="canonical" href="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!-- iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f8aa27">
+    <link rel="icon" type="image/png" href="images/touch/android-chrome-192x192.png" sizes="192x192">
+    <!-- Windows-->
+    <meta name="msapplication-TileImage" content="images/touch/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#f8aa27">
+    <!-- Standard-->
+    <link rel="icon" type="image/png" href="images/touch/favicon.png" sizes="128x128">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Styles--><link rel="stylesheet" href="styles/plugins.css">
+<link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body class="page-index"><!--[if lt IE 9]>
+    <p class="browsehappy">Данный сайт построен на передовых, современных технологиях и не поддерживает Ваш браузер. Настоятельно рекомендуем выбрать и установить любой из &nbsp;<a href="http://browsehappy.com/" target="_blank">современных браузеров.</a> Это бесплатно и займет всего несколько минут.</p><![endif]-->
+    <div class="preloader-wrapper">
+      <div class="preloader">Loader</div>
+    </div>
+    <div class="mfp-hide white-popup-block" id="modal">
+      <form method="POST" action="">
+        <div class="text--center">
+          <h3>Товар добавлен в корзину</h3>
+        </div>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><img src="images/cart.jpg" alt=""></td>
+              <td>
+                <div>Пирог с красной рыбой 1,5 кг</div>
+                <div class="cart-count hidden__xl hidden__lg hidden__md">
+                  <div class="count input__quantity-js"><span class="inc">-</span>
+                    <input class="input__number-js" type="text" value="1"><span class="dec">+</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="hidden__xl hidden__lg hidden__md"><a class="delete-cart--js" href="#"><img src="images/icons/close.png" alt=""></a></div><span>760 <span class="ruble">ф</span></span>
+              </td>
+              <td class="cart-count hidden__sm hidden__xs">
+                <div class="count input__quantity-js"><span class="inc">-</span>
+                  <input class="input__number-js" type="text" value="1"><span class="dec">+</span>
+                </div>
+              </td>
+              <td class="cart-summ hidden__sm hidden__xs"><b>760 <span class="ruble">ф</span></b></td>
+              <td class="hidden__sm hidden__xs"><a class="delete-cart--js" href="#"><img src="images/icons/close.png" alt=""></a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text--center">
+          <button class="btn btn--primary" type="submit"><span>оформить заказ</span></button>
+          <button class="btn btn--outlined popup-modal-dismiss" href="#"><span>продолжить покупки</span></button>
+        </div>
+      </form>
+    </div>
+    <div class="scrollup"><i class="icon-up-open"></i><span>наверх</span></div>
+    <div class="pages">
+      <header class="page-header">
+        <div class="container container-max">
+          <div class="page-header-inner is-row middle__xs between__xs nowrap__xs">
+            <div class="is-col">
+              <div class="page-header__logo"><a href="/"><img src="images/logo.svg" alt="Люди любят"></a></div>
+            </div>
+            <div class="is-col is-col__lg-6 is-col__md-7 page-header__nav">
+              <nav class="nav">
+                <button class="hamburger hamburger--slider hamburger--js" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                <div class="main-nav__collapse">
+                  <ul class="main-nav">
+                    <li class="main-nav__item main-nav__item--parent"><a class="main-nav__link" href="#">Продукция</a>
+                      <div class="submenu">
+                        <div class="is-row">
+                          <div class="is-col is-col__lg-4 is-col__xs-12"><a class="naming" href="#">
+                              <h4>Акции</h4><img class="hidden__xl hidden__lg" src="images/menu-m.jpg" alt=""><img class="hidden__xs hidden__sm hidden__md" src="images/menu.jpg" alt=""></a></div>
+                          <div class="is-col is-col__lg-8 is-col__xs-12">
+                            <ul class="sub-nav">
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">хлеба</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">слойки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">сдобы и кексы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">торты и пирожные</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">пироги и пирожки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">Бизнес-ланчи и завтраки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">кухня</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">напитки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">сендвичи</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Условия предзаказа</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Карта гостя</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Работа</a></li>
+                    <li class="main-nav__item main-nav__item--parent"><a class="main-nav__link" href="#">О нас</a>
+                      <div class="submenu">
+                        <ul class="sub-nav">
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">хлеба</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">слойки</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">сдобы и кексы</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">торты и пирожные</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">пироги и пирожки</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">Бизнес-ланчи и завтраки</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">кухня</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">напитки</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">сендвичи</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="hidden__md hidden__lg hidden__xl margTop-auto">
+                    <div class="flex between__xs middle__xs">
+                      <div class="page-header__loc"><a href="#"><i class="icon-location"></i><span>пекарни</span></a></div>
+                      <div class="social"><a href="#"><i class="icon-vkontakte"></i></a><a href="#"><i class="icon-instagram"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="is-col page-header__loc hidden__sm hidden__xs"><a href="#"><i class="icon-location"></i><span>пекарни</span></a></div>
+            <div class="is-col social hidden__sm hidden__xs hidden__md"><a href="#"><i class="icon-vkontakte"></i></a><a href="#"><i class="icon-instagram"></i></a></div>
+            <div class="is-col"><a class="page-header__cart" href="#"><i class="icons icons--cart"></i><span>3</span></a></div>
+          </div>
+        </div>
+      </header>
+      <main class="page-main">
+        <section class="card">
+          <div class="container container-max">
+            <div class="is-row between__xs">
+              <div class="is-col is-col__xl-7 is-col__md-6 is-col__xs-12">
+                <div class="card-img">
+                  <div class="gallery-top swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/lunch.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/lunch.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/lunch.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/lunch.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/lunch.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/lunch.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/lunch.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/lunch.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-settings">
+                      <div class="swiper-btn swiper-btnS-prev"><span class="icon-left-open"></span></div>
+                      <div class="swiper-btn swiper-btnS-next"><span class="icon-right-open"></span></div>
+                    </div>
+                  </div>
+                  <div class="gallery-thumbs swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/mini-card-1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/mini-card-2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/mini-card-3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/mini-card-4.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/mini-card-1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/mini-card-2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/mini-card-3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/mini-card-4.jpg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="is-col is-col__xl-5 is-col__md-6 is-col__xs-12">
+                <div class="card-desc">
+                  <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                    <li class="breadcrumbs__item active">Бизнес-ланч №1</li>
+                  </ul>
+                  <h3>Название продукта в одну или две строки</h3>
+                  <div class="price">
+                    <div class="price-item">
+                      <div class="value">190 <span class="ruble">ф</span></div>
+                    </div>
+                  </div>
+                  <div class="card-info"><span class="icons icons--info"></span><span>Удвоенное начиление бонусов при покупке этого товара</span></div>
+                  <div class="lunch">
+                    <div class="slider-lunch swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="lunch-item swiper-slide" data-id="salat-1">
+                          <h4 class="lunch-title">Салат</h4>
+                          <div class="lunch-img"><img src="images/lunch-1.jpg" alt=""></div>
+                          <div class="lunch-desc">
+                            <div class="flex between__xs middle__xs"><b class="text__lg">Оливье</b>
+                              <div class="text__lg text--gray">0.35 кг</div>
+                            </div>
+                            <p>Какой рецепт салата Оливье считать классическим: тот, по которому его готовил Люсьен Оливье в московском ресторане "Эрмитаж", или "советский", с колбасой и зеленым горошком?</p>
+                          </div>
+                          <div class="card-lists">
+                            <div class="card-list"><span>калории</span><b>320</b></div>
+                            <div class="card-list"><span>белки</span><b>32 г</b></div>
+                            <div class="card-list"><span>жиры</span><b>20 г</b></div>
+                            <div class="card-list"><span>углеводы</span><b>40 г</b></div>
+                          </div>
+                          <p class="text--gray">Калорийность продукта указана на 100гр</p><a class="btn btn--info btn--full select--js" href="#">выбрать</a>
+                        </div>
+                        <div class="lunch-item swiper-slide" data-id="salat-2">
+                          <h4 class="lunch-title">Салат</h4>
+                          <div class="lunch-img"><img src="images/lunch-1.jpg" alt=""></div>
+                          <div class="lunch-desc">
+                            <div class="flex between__xs middle__xs"><b class="text__lg">Оливье</b>
+                              <div class="text__lg text--gray">0.35 кг</div>
+                            </div>
+                            <p>Какой рецепт салата Оливье считать классическим: тот, по которому его готовил Люсьен Оливье в московском ресторане "Эрмитаж", или "советский", с колбасой и зеленым горошком?</p>
+                          </div>
+                          <div class="card-lists">
+                            <div class="card-list"><span>калории</span><b>320</b></div>
+                            <div class="card-list"><span>белки</span><b>32 г</b></div>
+                            <div class="card-list"><span>жиры</span><b>20 г</b></div>
+                            <div class="card-list"><span>углеводы</span><b>40 г</b></div>
+                          </div>
+                          <p class="text--gray">Калорийность продукта указана на 100гр</p><a class="btn btn--info btn--full select--js" href="#">выбрать</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-settings">
+                      <div class="swiper-btn swiper-btnL-prev"><span class="icon-left-open"></span></div>
+                      <div class="swiper-btn swiper-btnL-next"><span class="icon-right-open"></span></div>
+                    </div>
+                  </div>
+                  <div class="lunch">
+                    <div class="slider-lunchS swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="lunch-item swiper-slide" data-id="soup-1">
+                          <h4 class="lunch-title">Суп</h4>
+                          <div class="lunch-img"><img src="images/lunch-1.jpg" alt=""></div>
+                          <div class="lunch-desc">
+                            <div class="flex between__xs middle__xs"><b class="text__lg">Солянка</b>
+                              <div class="text__lg text--gray">0.35 кг</div>
+                            </div>
+                            <p>Какой рецепт салата Оливье считать классическим: тот, по которому его готовил Люсьен Оливье в московском ресторане "Эрмитаж", или "советский", с колбасой и зеленым горошком?</p>
+                          </div>
+                          <div class="card-lists">
+                            <div class="card-list"><span>калории</span><b>320</b></div>
+                            <div class="card-list"><span>белки</span><b>32 г</b></div>
+                            <div class="card-list"><span>жиры</span><b>20 г</b></div>
+                            <div class="card-list"><span>углеводы</span><b>40 г</b></div>
+                          </div>
+                          <p class="text--gray">Калорийность продукта указана на 100гр</p><a class="btn btn--info btn--full select--js" href="#">выбрать</a>
+                        </div>
+                        <div class="lunch-item swiper-slide" data-id="soup-2">
+                          <h4 class="lunch-title">Суп</h4>
+                          <div class="lunch-img"><img src="images/lunch-1.jpg" alt=""></div>
+                          <div class="lunch-desc">
+                            <div class="flex between__xs middle__xs"><b class="text__lg">Солянка</b>
+                              <div class="text__lg text--gray">0.35 кг</div>
+                            </div>
+                            <p>Какой рецепт салата Оливье считать классическим: тот, по которому его готовил Люсьен Оливье в московском ресторане "Эрмитаж", или "советский", с колбасой и зеленым горошком?</p>
+                          </div>
+                          <div class="card-lists">
+                            <div class="card-list"><span>калории</span><b>320</b></div>
+                            <div class="card-list"><span>белки</span><b>32 г</b></div>
+                            <div class="card-list"><span>жиры</span><b>20 г</b></div>
+                            <div class="card-list"><span>углеводы</span><b>40 г</b></div>
+                          </div>
+                          <p class="text--gray">Калорийность продукта указана на 100гр</p><a class="btn btn--info btn--full select--js" href="#">выбрать</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-settings">
+                      <div class="swiper-btn swiper-btnS-prev"><span class="icon-left-open"></span></div>
+                      <div class="swiper-btn swiper-btnS-next"><span class="icon-right-open"></span></div>
+                    </div>
+                  </div>
+                  <div class="lunch">
+                    <div class="slider-lunchD swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="lunch-item swiper-slide" data-id="desert-1">
+                          <h4 class="lunch-title">Десерт</h4>
+                          <div class="lunch-img"><img src="images/lunch-1.jpg" alt=""></div>
+                          <div class="lunch-desc">
+                            <div class="flex between__xs middle__xs"><b class="text__lg">Слойка</b>
+                              <div class="text__lg text--gray">0.35 кг</div>
+                            </div>
+                            <p>Какой рецепт салата Оливье считать классическим: тот, по которому его готовил Люсьен Оливье в московском ресторане "Эрмитаж", или "советский", с колбасой и зеленым горошком?</p>
+                          </div>
+                          <div class="card-lists">
+                            <div class="card-list"><span>калории</span><b>320</b></div>
+                            <div class="card-list"><span>белки</span><b>32 г</b></div>
+                            <div class="card-list"><span>жиры</span><b>20 г</b></div>
+                            <div class="card-list"><span>углеводы</span><b>40 г</b></div>
+                          </div>
+                          <p class="text--gray">Калорийность продукта указана на 100гр</p><a class="btn btn--info btn--full select--js" href="#">выбрать</a>
+                        </div>
+                        <div class="lunch-item swiper-slide" data-id="desert-2">
+                          <h4 class="lunch-title">Десерт</h4>
+                          <div class="lunch-img"><img src="images/lunch-1.jpg" alt=""></div>
+                          <div class="lunch-desc">
+                            <div class="flex between__xs middle__xs"><b class="text__lg">Слойка</b>
+                              <div class="text__lg text--gray">0.35 кг</div>
+                            </div>
+                            <p>Какой рецепт салата Оливье считать классическим: тот, по которому его готовил Люсьен Оливье в московском ресторане "Эрмитаж", или "советский", с колбасой и зеленым горошком?</p>
+                          </div>
+                          <div class="card-lists">
+                            <div class="card-list"><span>калории</span><b>320</b></div>
+                            <div class="card-list"><span>белки</span><b>32 г</b></div>
+                            <div class="card-list"><span>жиры</span><b>20 г</b></div>
+                            <div class="card-list"><span>углеводы</span><b>40 г</b></div>
+                          </div>
+                          <p class="text--gray">Калорийность продукта указана на 100гр</p><a class="btn btn--info btn--full select--js" href="#">выбрать</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-settings">
+                      <div class="swiper-btn swiper-btnD-prev"><span class="icon-left-open"></span></div>
+                      <div class="swiper-btn swiper-btnD-next"><span class="icon-right-open"></span></div>
+                    </div>
+                  </div>
+                  <div class="card-add">
+                    <div class="cart-count">
+                      <div class="count input__quantity-js"><span class="inc">-</span>
+                        <input class="input__number-js" type="text" value="1"><span class="dec">+</span>
+                      </div>
+                    </div>
+                    <div class="card-btn"><a class="btn btn--primary btn__lg btn--full" href="#"><i class="icons icons--cart"></i><span>в корзину</span></a></div>
+                  </div>
+                  <p>Химический состав хлеба с семечками содержит богатый и сбалансированный витаминно-минеральный комплекс, в нём представлены: холин, бета-каротин, витамины: А, В1, В2, В5, В6, В9, Е, Н и РР, а также необходимые организму минеральные вещества: калий, кальций, магний, цинк, селен, медь и марганец, железо, хлор и сера, йод, хром, фтор, молибден, бор и ванадий, кремний, кобальт, фосфор и натрий.</p>
+                  <h4>Рекомендуем попробовать</h4>
+                  <div class="card-rec">
+                    <div class="slider-cards swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="card-item swiper-slide"><img src="images/card-1.jpg" alt="">
+                          <p>Название продукта в одну или две строки</p>
+                        </div>
+                        <div class="card-item swiper-slide"><img src="images/card-2.jpg" alt="">
+                          <p>Название продукта в одну или две строки</p>
+                        </div>
+                        <div class="card-item swiper-slide"><img src="images/card-3.jpg" alt="">
+                          <p>Название продукта в одну или две строки</p>
+                        </div>
+                        <div class="card-item swiper-slide"><img src="images/card-1.jpg" alt="">
+                          <p>Название продукта в одну или две строки</p>
+                        </div>
+                        <div class="card-item swiper-slide"><img src="images/card-2.jpg" alt="">
+                          <p>Название продукта в одну или две строки</p>
+                        </div>
+                        <div class="card-item swiper-slide"><img src="images/card-3.jpg" alt="">
+                          <p>Название продукта в одну или две строки</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-settings">
+                      <div class="swiper-btn swiper-btn-prev"><span class="icon-left-open"></span></div>
+                      <div class="swiper-btn swiper-btn-next"><span class="icon-right-open"></span></div>
+                    </div>
+                  </div>
+                  <div class="share-soc">
+                    <div class="text--uppercase">поделиться в соц. сетях</div>
+                    <div><a href="#"><i class="icon-vkontakte"></i></a><a href="#"><i class="icon-facebook"></i></a><a href="#"><i class="icon-odnoklassniki"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="container container-max">
+          <div class="is-row">
+            <div class="is-col is-col__xl-8 is-col__lg-7 is-col__md-6 is-col__xs-12"><a class="instagram" href="https://www.instagram.com/" target="_blank">
+                <div class="instagram-user">
+                  <div class="instagram-userPhoto"></div>
+                  <div class="instagram-userDesc">
+                    <div class="instagram-userDesc-title"></div>
+                    <div class="instagram-userDesc-link"><i class="icon-instagram"></i></div>
+                    <div class="instagram-userDesc-meta">
+                      <div class="instagram-userDesc-media"></div>
+                      <div class="instagram-userDesc-follows"></div>
+                      <div class="instagram-userDesc-followed_by"></div>
+                    </div>
+                    <div class="instagram-userDesc-desc"></div>
+                  </div>
+                </div>
+                <div class="instagram-photo"></div></a></div>
+            <div class="is-col is-col__xl-4 is-col__lg-5 is-col__md-6 is-col__xs-12">
+              <div class="flex between__xs">
+                <div>
+                  <ul class="list--unstyled margbot60">
+                    <li><a href="#">вход для сотрудников</a></li>
+                    <li><a href="#">контакты</a></li>
+                  </ul>
+                  <div class="social margbot60">
+                    <div class="margbot20"><b>мы в соц.сетях</b></div><a href="#"><i class="icon-vkontakte"></i></a><a href="#"><i class="icon-instagram"></i></a>
+                  </div>
+                </div><a class="btn btn--primary" href="#">связаться с нами</a>
+              </div>
+              <div class="flex between__xs">
+                <div class="page-footer__copy">© Людилюбят 2018</div>
+                <div class="page-footer__logo"><span>Разработка сайта:</span><a href="#"><img src="images/cm_logo.svg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div><!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="scripts/plugins.js"></script>
+<script src="scripts/main.js"></script>
+  </body>
+</html>

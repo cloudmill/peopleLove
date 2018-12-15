@@ -1,0 +1,405 @@
+'use strict';
+// ready
+$(document).ready(function () {
+
+	$('body').addClass('preloader-site');
+
+	// scrollToTop
+	$('.scrollup').fadeOut(500);
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 500) {
+			$('.scrollup').fadeIn(500);
+		} else {
+			$('.scrollup').fadeOut(500);
+		}
+	});
+	$('.scrollup').click(function () {
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+	// scrollToTop
+
+	//busket
+	$('.input__quantity-js .inc').click(function () {
+		var $input = $(this).parents('.input__quantity-js').find('input');
+		var count = parseInt($input.val()) - 1;
+		count = count < 1 ? 1 : count;
+		$input.val(count);
+		$input.change();
+		return false;
+	});
+	$('.input__quantity-js .dec').click(function () {
+		var $input = $(this).parents('.input__quantity-js').find('input');
+		var count = parseInt($input.val()) + 1;
+		count = count > 999 ? 1 : count;
+		$input.val(count);
+		$input.change();
+		return false;
+	});
+	$('.delete-cart--js').click(function () {
+		$(this).parent().parent().remove();
+	});
+	jQuery.fn.ForceNumericOnly = function () {
+		return this.each(function () {
+			$(this).keydown(function (e) {
+				var key = e.charCode || e.keyCode || 0;
+				// success backspace, tab, delete, arrows, numbers
+				return key == 8 || key == 9 || key == 46 || key == 190 || key >= 37 && key <= 40 || key >= 48 && key <= 57 || key >= 96 && key <= 105;
+			});
+		});
+	};
+	$(".input__number-js").ForceNumericOnly();
+	//busket
+
+	// adaptive menu
+	$('.hamburger--js').click(function () {
+		$('body').toggleClass('fixed');
+		$(this).toggleClass('is-active');
+		$(this).next().toggleClass('is-active');
+	});
+	$('.main-nav__item--parent > .main-nav__link').click(function () {
+		if ($('.main-nav__item--parent').hasClass('active') && !$(this).parent().hasClass('active')) {
+			$('.main-nav__item--parent').removeClass('active');
+		}
+		$(this).parent().toggleClass('active');
+		return false;
+	});
+	$(document).mouseup(function (e) {
+		var submenu = $(".main-nav");
+		if (!submenu.is(e.target) && submenu.has(e.target).length === 0) {
+			$('.main-nav__item--parent').removeClass('active');
+		}
+	});
+	// adaptive menu
+
+	// mask phone {maskedinput}
+	$("[name=phone]").mask("+7 (999) 999-9999");
+	// mask phone
+
+	// slider {http://idangero.us/swiper/}
+	function swiperMain() {
+		new Swiper('.slider-news', {
+			slidesPerView: 6,
+			loop: true,
+			spaceBetween: 20,
+			centeredSlides: true,
+			navigation: {
+				nextEl: '.swiper-btn-next',
+				prevEl: '.swiper-btn-prev'
+			},
+			breakpoints: {
+				1366: {
+					slidesPerView: 4
+				},
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 10
+				},
+				640: {
+					slidesPerView: 2
+				},
+				320: {
+					slidesPerView: 1
+				}
+			}
+		});
+	}
+
+	swiperMain();
+	var quest = new Swiper('.slider-guest', {
+		slidesPerView: 'auto',
+		spaceBetween: 0,
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+			renderFraction: function renderFraction(currentClass, totalClass) {
+				return '<span class="' + currentClass + '"></span><span class="' + totalClass + '"></span>';
+			}
+		},
+		navigation: {
+			nextEl: '.swiper-btn-next',
+			prevEl: '.swiper-btn-prev'
+		}
+	});
+	var lunch = new Swiper('.slider-lunch', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-btnL-next',
+			prevEl: '.swiper-btnL-prev'
+		}
+	});
+	var lunchS = new Swiper('.slider-lunchS', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-btnS-next',
+			prevEl: '.swiper-btnS-prev'
+		}
+	});
+	var lunchD = new Swiper('.slider-lunchD', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-btnD-next',
+			prevEl: '.swiper-btnD-prev'
+		}
+	});
+	var cards = new Swiper('.slider-cards', {
+		slidesPerView: 3,
+		spaceBetween: 10,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-btn-next',
+			prevEl: '.swiper-btn-prev'
+		},
+		breakpoints: {
+			767: {
+				slidesPerView: 2
+			}
+		}
+	});
+	var galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 0,
+		slidesPerView: 4,
+		freeMode: true,
+		direction: 'vertical',
+		touchRatio: 0,
+		preventClicks: false,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		breakpoints: {
+			1280: {
+				slidesPerView: 2
+			},
+			640: {
+				slidesPerView: 3
+			},
+			320: {
+				slidesPerView: 3
+			}
+		}
+	});
+	var galleryTop = new Swiper('.gallery-top', {
+		spaceBetween: 0,
+		navigation: {
+			nextEl: '.swiper-btnS-next',
+			prevEl: '.swiper-btnS-prev'
+		},
+		thumbs: {
+			swiper: galleryThumbs
+		}
+	});
+	// slider
+
+	//.select--js
+	$('.select--js').click(function () {
+		$(this).parent().parent().find('.btn').text('Выбрать');
+		$(this).parent().parent().find('.lunch-item').removeClass('active');
+		$(this).text('Выбрано');
+		$(this).parent().addClass('active');
+	});
+	//.select--js
+
+	// select {select2}
+	$('select').select2({
+		minimumResultsForSearch: Infinity
+	});
+	// select
+
+	$('.delivery--js input').click(function () {
+		var id = $(this).attr('id');
+		$('.hidden').hide();
+		$('.hidden[data-value=' + id + ']').show();
+	});
+
+	// accordion
+	$(".accordion").on("click", ".accordion-header", function () {
+		$(this).toggleClass("active").next().slideToggle();
+	});
+	// accordion
+
+	// popup {magnific-popup}
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0, 1]
+		}
+	});
+	$('.popup-modal').magnificPopup({
+		type: 'inline'
+	});
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+	// popup
+
+	// fullpage
+	$('#fullpage').fullpage({
+		verticalCentered: true,
+		responsiveWidth: 767
+	});
+	// fullpage
+
+	//tabs
+	$('ul.tabs li').click(function () {
+		var tab_id = $(this).attr('data-tab');
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+		$(this).addClass('current');
+		$("#" + tab_id).addClass('current');
+		swiperMain();
+	});
+	//tabs
+
+	//isotop
+	var $grid = $('.grid').isotope({
+		itemSelector: '.grid-item',
+		layoutMode: 'fitRows'
+	});
+	$('#filters').on('click', 'li', function () {
+		$('#filters li').removeClass('active');
+		$(this).addClass('active');
+		var filterValue = $(this).attr('data-filter');
+		$grid.isotope({ filter: filterValue });
+	});
+	//isotop
+
+	var idToken = '3184899862.1677ed0.fa4ef83ae9a143ce851f9d20338b4512';
+	function sendUserRequest() {
+		var endpointUser = 'https://api.instagram.com/v1/users/self/';
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', endpointUser + '?access_token=' + encodeURIComponent(idToken));
+		xhr.onreadystatechange = function () {
+			if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+				var data = xhr.responseText;
+				var jsonResponse = JSON.parse(data);
+				var dataC = jsonResponse.data;
+				$('.instagram-userPhoto').html('<img src=' + dataC.profile_picture + ' alt="" />');
+				$('.instagram-userDesc-title').html('<p>' + dataC.username + '</p>');
+				$('.instagram-userDesc-media').html('<p><b>' + dataC.counts.media + '</b> публикаций</p>');
+				$('.instagram-userDesc-follows').html('<p><b>' + dataC.counts.follows + '</b> подписчиков</p>');
+				$('.instagram-userDesc-followed_by').html('<p><b>' + dataC.counts.followed_by + '</b> подписок</p>');
+				$('.instagram-userDesc-desc').text(dataC.bio);
+			}
+			if (this.status === 429) {
+				$('.instagram').html('<h5>Превышено максимальное количество запросов в час. Наш общий максимальный предел составляет 200 запросов в час</h5>');
+			}
+		};
+		xhr.send();
+	}
+	function sendPhotoRequest() {
+		var endpointPhoto = 'https://api.instagram.com/v1/users/self/media/recent/';
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', endpointPhoto + '?access_token=' + encodeURIComponent(idToken));
+		xhr.onreadystatechange = function () {
+			if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+				var data = xhr.responseText;
+				var jsonResponse = JSON.parse(data);
+				var dataC = jsonResponse.data;
+				for (var i = 0; i < 11; i++) {
+					$('.instagram-photo').append('<img src=' + dataC[i].images.thumbnail.url + ' alt=\'\' />');
+				}
+			}
+		};
+		xhr.send();
+	}
+	sendUserRequest();
+	sendPhotoRequest();
+});
+// ready
+
+// mobile sctipts
+var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+$(window).on("load resize", function () {
+	if (screenWidth <= 1024) {
+		$(".objects-body-inner, .card-desc").mCustomScrollbar("destroy");
+	} else {
+		$(".objects-body-inner, .card-desc").mCustomScrollbar();
+	}
+});
+
+$(window).on("load", function () {
+	setTimeout(function () {
+		$('.preloader-wrapper').fadeOut();
+		$('body').removeClass('preloader-site');
+	}, 1000);
+});
+
+function initMap() {
+	var markers = [];
+	var locations = [[59.91701049, 30.31812429], [59.91916157, 30.3251195], [59.91756978, 30.31812429], [59.92049517, 30.33250093], [59.91701049, 30.3276515]];
+	var hrefId = ['object1', 'object2', 'object3', 'object4', 'object5'];
+
+	var mapOptions = {
+		center: new google.maps.LatLng(59.91916157, 30.3251195),
+		zoom: 16,
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		mapTypeControl: false,
+		zoomControl: false,
+		scrollwheel: false
+	};
+	var mapElement = document.getElementById('map');
+	var map = new google.maps.Map(mapElement, mapOptions);
+
+	var infowindow = new google.maps.InfoWindow();
+
+	var marker = undefined,
+	    i = undefined;
+
+	for (i = 0; i < locations.length; i++) {
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+			map: map,
+			icon: "images/icons/bubble-a.png"
+		});
+		marker.set('data-href', hrefId[i]);
+		markers.push(marker);
+		google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
+			return function () {
+				this.setIcon('images/icons/bubble.png');
+			};
+		})(marker));
+		google.maps.event.addListener(marker, 'mouseout', (function (marker) {
+			return function () {
+				this.setIcon('images/icons/bubble-a.png');
+			};
+		})(marker));
+		google.maps.event.addListener(marker, 'click', (function (marker) {
+			return function () {
+				this.setIcon('images/icons/bubble-b.png');
+				$('.objects-body__item').removeClass('active');
+				var val = marker.get('data-href');
+				$('#' + val).addClass('active');
+				$(".objects-body-inner").mCustomScrollbar("scrollTo", '#' + val);
+				return false;
+			};
+		})(marker));
+	}
+
+	moveMarker(map, marker);
+}
+
+function moveMarker(map, marker) {
+	$('.objects-body__item').click(function () {
+		$('.objects-body__item').removeClass('active');
+		var coords = $(this).data('adr');
+		var latlngStr = coords.split(',', 2);
+		var lat = parseFloat(latlngStr[0]);
+		var lng = parseFloat(latlngStr[1]);
+		$(this).addClass('active');
+		marker.setPosition(new google.maps.LatLng(lat, lng));
+		marker.setIcon('images/icons/bubble-b.png');
+		map.panTo(new google.maps.LatLng(lat, lng));
+	});
+};
+//# sourceMappingURL=main.js.map
