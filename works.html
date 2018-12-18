@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Case__fly</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="canonical" href="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!-- iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f8aa27">
+    <link rel="icon" type="image/png" href="images/touch/android-chrome-192x192.png" sizes="192x192">
+    <!-- Windows-->
+    <meta name="msapplication-TileImage" content="images/touch/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#f8aa27">
+    <!-- Standard-->
+    <link rel="icon" type="image/png" href="images/touch/favicon.png" sizes="128x128">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Styles--><link rel="stylesheet" href="styles/plugins.css">
+<link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body class="page-index"><!--[if lt IE 9]>
+    <p class="browsehappy">Данный сайт построен на передовых, современных технологиях и не поддерживает Ваш браузер. Настоятельно рекомендуем выбрать и установить любой из &nbsp;<a href="http://browsehappy.com/" target="_blank">современных браузеров.</a> Это бесплатно и займет всего несколько минут.</p><![endif]-->
+    <div class="preloader-wrapper">
+      <div class="blobs">
+        <div class="blob-center"><img src="images/icons/loader.svg" alt=""></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+      </div>
+    </div>
+    <div class="mfp-hide white-popup-block" id="modal">
+      <form method="POST" action="">
+        <div class="text--center">
+          <h3>Товар добавлен в корзину</h3>
+        </div>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><img src="images/cart.jpg" alt=""></td>
+              <td>
+                <div>Пирог с красной рыбой 1,5 кг</div>
+                <div class="cart-count hidden__xl hidden__lg hidden__md">
+                  <div class="count input__quantity-js"><span class="inc">-</span>
+                    <input class="input__number-js" type="text" value="1"><span class="dec">+</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="hidden__xl hidden__lg hidden__md"><a class="delete-cart--js" href="#"><img src="images/icons/close.png" alt=""></a></div><span>760 <span class="ruble">ф</span></span>
+              </td>
+              <td class="cart-count hidden__sm hidden__xs">
+                <div class="count input__quantity-js"><span class="inc">-</span>
+                  <input class="input__number-js" type="text" value="1"><span class="dec">+</span>
+                </div>
+              </td>
+              <td class="cart-summ hidden__sm hidden__xs"><b>760 <span class="ruble">ф</span></b></td>
+              <td class="hidden__sm hidden__xs"><a class="delete-cart--js" href="#"><img src="images/icons/close.png" alt=""></a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text--center">
+          <button class="btn btn--primary" type="submit"><span>оформить заказ</span></button>
+          <button class="btn btn--outlined popup-modal-dismiss" href="#"><span>продолжить покупки</span></button>
+        </div>
+      </form>
+    </div>
+    <div class="scrollup"><i class="icon-up-open"></i><span>наверх</span></div>
+    <div class="pages">
+      <header class="page-header">
+        <div class="container container-max">
+          <div class="page-header-inner is-row middle__xs between__xs nowrap__xs">
+            <div class="is-col">
+              <div class="page-header__logo"><a href="/"><img src="images/logo.svg" alt="Люди любят"></a></div>
+            </div>
+            <div class="is-col is-col__lg-6 is-col__md-7 page-header__nav">
+              <nav class="nav">
+                <button class="hamburger hamburger--slider hamburger--js" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                <div class="main-nav__collapse">
+                  <ul class="main-nav">
+                    <li class="main-nav__item main-nav__item--parent"><a class="main-nav__link" href="#">Продукция</a>
+                      <div class="submenu">
+                        <div class="is-row">
+                          <div class="is-col is-col__lg-4 is-col__xs-12"><a class="naming" href="#">
+                              <h4>Акции</h4><img class="hidden__xl hidden__lg" src="images/menu-m.jpg" alt=""><img class="hidden__xs hidden__sm hidden__md" src="images/menu.jpg" alt=""></a></div>
+                          <div class="is-col is-col__lg-8 is-col__xs-12">
+                            <ul class="sub-nav">
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">хлеба</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">слойки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">сдобы и кексы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">торты и пирожные</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">пироги и пирожки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">Бизнес-ланчи и завтраки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">кухня</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">напитки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="#">сендвичи</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Условия предзаказа</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Карта гостя</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Работа</a></li>
+                    <li class="main-nav__item main-nav__item--parent"><a class="main-nav__link" href="#">О нас</a>
+                      <div class="submenu">
+                        <ul class="sub-nav">
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">хлеба</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">слойки</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">сдобы и кексы</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">торты и пирожные</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">пироги и пирожки</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">Бизнес-ланчи и завтраки</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">кухня</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">напитки</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">сендвичи</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="hidden__md hidden__lg hidden__xl margTop-auto">
+                    <div class="flex between__xs middle__xs">
+                      <div class="page-header__loc"><a href="#"><i class="icon-location"></i><span>пекарни</span></a></div>
+                      <div class="social"><a href="#"><i class="icon-vkontakte"></i></a><a href="#"><i class="icon-instagram"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="is-col page-header__loc hidden__sm hidden__xs"><a href="#"><i class="icon-location"></i><span>пекарни</span></a></div>
+            <div class="is-col social hidden__sm hidden__xs hidden__md"><a href="#"><i class="icon-vkontakte"></i></a><a href="#"><i class="icon-instagram"></i></a></div>
+            <div class="is-col"><a class="page-header__cart" href="#"><i class="icons icons--cart"></i><span>3</span></a></div>
+          </div>
+        </div>
+      </header>
+      <main class="page-main">
+        <section class="works">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item active">Работайте с нами</li>
+            </ul>
+            <h1>Работайте с нами</h1>
+            <div class="slider-guest swiper-container">
+              <div class="swiper-wrapper">
+                <div class="guest-item swiper-slide">
+                  <div class="inner">
+                    <h3>Вакансии производства</h3>
+                    <p class="text__lg">Кондитерские и хлебобулочные изделия полностью разработаны и сделаны нашими специалистами.  Используя сырье высочайшего качества, знания и опыт мастеров высокого уровня, технологии и оборудование от ведущих производителей, мы создаем продукт, который любят наши покупатели.</p>
+                  </div><img src="images/works.jpg" alt="">
+                </div>
+                <div class="guest-item swiper-slide">
+                  <div class="inner">
+                    <h3>Вакансии производства</h3>
+                    <p class="text__lg">Кондитерские и хлебобулочные изделия полностью разработаны и сделаны нашими специалистами.  Используя сырье высочайшего качества, знания и опыт мастеров высокого уровня, технологии и оборудование от ведущих производителей, мы создаем продукт, который любят наши покупатели.</p>
+                  </div><img src="images/works.jpg" alt="">
+                </div>
+                <div class="guest-item swiper-slide">
+                  <div class="inner">
+                    <h3>Вакансии производства</h3>
+                    <p class="text__lg">Кондитерские и хлебобулочные изделия полностью разработаны и сделаны нашими специалистами.  Используя сырье высочайшего качества, знания и опыт мастеров высокого уровня, технологии и оборудование от ведущих производителей, мы создаем продукт, который любят наши покупатели.</p>
+                  </div><img src="images/works.jpg" alt="">
+                </div>
+                <div class="guest-item swiper-slide">
+                  <div class="inner">
+                    <h3>Вакансии производства</h3>
+                    <p class="text__lg">Кондитерские и хлебобулочные изделия полностью разработаны и сделаны нашими специалистами.  Используя сырье высочайшего качества, знания и опыт мастеров высокого уровня, технологии и оборудование от ведущих производителей, мы создаем продукт, который любят наши покупатели.</p>
+                  </div><img src="images/works.jpg" alt="">
+                </div>
+                <div class="guest-item swiper-slide">
+                  <div class="inner">
+                    <h3>Вакансии производства</h3>
+                    <p class="text__lg">Кондитерские и хлебобулочные изделия полностью разработаны и сделаны нашими специалистами.  Используя сырье высочайшего качества, знания и опыт мастеров высокого уровня, технологии и оборудование от ведущих производителей, мы создаем продукт, который любят наши покупатели.</p>
+                  </div><img src="images/works.jpg" alt="">
+                </div>
+                <div class="guest-item swiper-slide">
+                  <div class="inner">
+                    <h3>Вакансии производства</h3>
+                    <p class="text__lg">Кондитерские и хлебобулочные изделия полностью разработаны и сделаны нашими специалистами.  Используя сырье высочайшего качества, знания и опыт мастеров высокого уровня, технологии и оборудование от ведущих производителей, мы создаем продукт, который любят наши покупатели.</p>
+                  </div><img src="images/works.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-settings">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-navigation">
+                  <div class="swiper-btn swiper-btn-prev"><span class="icon-left-open"></span><span>Офис</span></div>
+                  <div class="swiper-btn swiper-btn-next"><span>Пекарни</span><span class="icon-right-open"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="works-blockqoute">
+              <div class="is-row middle__xs">
+                <div class="is-col is-col__md-5 is-col__xs-12"><a class="btn btn--primary" href="#">все вакансии</a></div>
+                <div class="is-col is-col__md-7 is-col__xs-12">
+                  <blockquote class="blockqoute">
+                    <p>Никто не может вернуться назад и совершить другой старт. <br> Но каждый может начать сегодня и прийти к другому финишу.</p><i class="text--primary">– Карл Бард</i>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="works-list">
+              <div class="is-row between__xs">
+                <div class="is-col is-col__xl-5 is-col__lg-6 is-col__xs-12 flex">
+                  <div class="works-icon is-col__lg-4 is-col__xs-3"><img src="images/icons/works-1.png" alt=""></div>
+                  <div class="works-item is-col__lg-8 is-col__xs-6">
+                    <h3>Лучший коллектив более 300 сотрудников</h3>
+                    <div class="works--js"><span class="icon-plus"></span></div>
+                    <div class="hidden">Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</div>
+                  </div>
+                </div>
+                <div class="is-col is-col__xl-5 is-col__lg-6 is-col__xs-12 flex">
+                  <div class="works-icon is-col__lg-4 is-col__xs-3"><img src="images/icons/works-2.png" alt=""></div>
+                  <div class="works-item is-col__lg-8 is-col__xs-6">
+                    <h3>Ценностные ориентиры</h3>
+                    <div class="works--js"><span class="icon-plus"></span></div>
+                    <div class="hidden">Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</div>
+                  </div>
+                </div>
+                <div class="is-col is-col__xl-5 is-col__lg-6 is-col__xs-12 flex">
+                  <div class="works-icon is-col__lg-4 is-col__xs-3"><img src="images/icons/works-3.png" alt=""></div>
+                  <div class="works-item is-col__lg-8 is-col__xs-6">
+                    <h3>Преимущества работы в компании</h3>
+                    <div class="works--js"><span class="icon-plus"></span></div>
+                    <div class="hidden">Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</div>
+                  </div>
+                </div>
+                <div class="is-col is-col__xl-5 is-col__lg-6 is-col__xs-12 flex">
+                  <div class="works-icon is-col__lg-4 is-col__xs-3"><img src="images/icons/works-4.png" alt=""></div>
+                  <div class="works-item is-col__lg-8 is-col__xs-6">
+                    <h3>Кого мы ждем?</h3>
+                    <div class="works--js"><span class="icon-plus"></span></div>
+                    <div class="hidden">Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="works-review">
+              <h3>Истории и отзывы сотрудников</h3>
+              <div class="slider-review swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="is-row">
+                      <div class="is-col is-col__xl-2 is-col__md-3 is-col__xs-12 flex middle__xs between__xs"><img src="images/ava.png" alt="">
+                        <div class="visible__xs visible__sm text__sm is-col__xs-7"><i class="text--primary">– Алексеева Алина Сергеевна</i>
+                          <div class="text--grey between__xs">
+                            <p>Менеджер по продажам</p>
+                            <p>26 декабря, 2018</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="is-col is-col__xl-10 is-col__md-9 is-col__xs-12">
+                        <blockquote class="blockqoute">
+                          <p>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</p>
+                          <div class="hidden__xs hidden__sm">
+                            <div class="text__lg"><i class="text--primary">– Алексеева Алина Сергеевна</i></div>
+                            <div class="flex text__sm text--grey between__xs">
+                              <p>Менеджер по продажам</p>
+                              <p>26 декабря, 2018</p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="is-row">
+                      <div class="is-col is-col__xl-2 is-col__md-3 is-col__xs-12 flex middle__xs between__xs"><img src="images/ava.png" alt="">
+                        <div class="visible__xs visible__sm text__sm is-col__xs-7"><i class="text--primary">– Алексеева Алина Сергеевна</i>
+                          <div class="text--grey between__xs">
+                            <p>Менеджер по продажам</p>
+                            <p>26 декабря, 2018</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="is-col is-col__xl-10 is-col__md-9 is-col__xs-12">
+                        <blockquote class="blockqoute">
+                          <p>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</p>
+                          <div class="hidden__xs hidden__sm">
+                            <div class="text__lg"><i class="text--primary">– Алексеева Алина Сергеевна</i></div>
+                            <div class="flex text__sm text--grey between__xs">
+                              <p>Менеджер по продажам</p>
+                              <p>26 декабря, 2018</p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="is-row">
+                      <div class="is-col is-col__xl-2 is-col__md-3 is-col__xs-12 flex middle__xs between__xs"><img src="images/ava.png" alt="">
+                        <div class="visible__xs visible__sm text__sm is-col__xs-7"><i class="text--primary">– Алексеева Алина Сергеевна</i>
+                          <div class="text--grey between__xs">
+                            <p>Менеджер по продажам</p>
+                            <p>26 декабря, 2018</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="is-col is-col__xl-10 is-col__md-9 is-col__xs-12">
+                        <blockquote class="blockqoute">
+                          <p>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</p>
+                          <div class="hidden__xs hidden__sm">
+                            <div class="text__lg"><i class="text--primary">– Алексеева Алина Сергеевна</i></div>
+                            <div class="flex text__sm text--grey between__xs">
+                              <p>Менеджер по продажам</p>
+                              <p>26 декабря, 2018</p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="is-row">
+                      <div class="is-col is-col__xl-2 is-col__md-3 is-col__xs-12 flex middle__xs between__xs"><img src="images/ava.png" alt="">
+                        <div class="visible__xs visible__sm text__sm is-col__xs-7"><i class="text--primary">– Алексеева Алина Сергеевна</i>
+                          <div class="text--grey between__xs">
+                            <p>Менеджер по продажам</p>
+                            <p>26 декабря, 2018</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="is-col is-col__xl-10 is-col__md-9 is-col__xs-12">
+                        <blockquote class="blockqoute">
+                          <p>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</p>
+                          <div class="hidden__xs hidden__sm">
+                            <div class="text__lg"><i class="text--primary">– Алексеева Алина Сергеевна</i></div>
+                            <div class="flex text__sm text--grey between__xs">
+                              <p>Менеджер по продажам</p>
+                              <p>26 декабря, 2018</p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="is-row">
+                      <div class="is-col is-col__xl-2 is-col__md-3 is-col__xs-12 flex middle__xs between__xs"><img src="images/ava.png" alt="">
+                        <div class="visible__xs visible__sm text__sm is-col__xs-7"><i class="text--primary">– Алексеева Алина Сергеевна</i>
+                          <div class="text--grey between__xs">
+                            <p>Менеджер по продажам</p>
+                            <p>26 декабря, 2018</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="is-col is-col__xl-10 is-col__md-9 is-col__xs-12">
+                        <blockquote class="blockqoute">
+                          <p>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</p>
+                          <div class="hidden__xs hidden__sm">
+                            <div class="text__lg"><i class="text--primary">– Алексеева Алина Сергеевна</i></div>
+                            <div class="flex text__sm text--grey between__xs">
+                              <p>Менеджер по продажам</p>
+                              <p>26 декабря, 2018</p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="is-row">
+                      <div class="is-col is-col__xl-2 is-col__md-3 is-col__xs-12 flex middle__xs between__xs"><img src="images/ava.png" alt="">
+                        <div class="visible__xs visible__sm text__sm is-col__xs-7"><i class="text--primary">– Алексеева Алина Сергеевна</i>
+                          <div class="text--grey between__xs">
+                            <p>Менеджер по продажам</p>
+                            <p>26 декабря, 2018</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="is-col is-col__xl-10 is-col__md-9 is-col__xs-12">
+                        <blockquote class="blockqoute">
+                          <p>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях — высокой нравственности, расширении полномочий, открытости и командном духе. Уважение и защита прав наших сотрудников является фундаментальным принципом, которому компания неизменно следует. В программе заботы о сотрудниках большое внимание уделяется совершенствованию знаний и навыков сотрудников, обеспечению их профессионального роста, а также созданию положительной и стимулирующей рабочей атмосферы.</p>
+                          <div class="hidden__xs hidden__sm">
+                            <div class="text__lg"><i class="text--primary">– Алексеева Алина Сергеевна</i></div>
+                            <div class="flex text__sm text--grey between__xs">
+                              <p>Менеджер по продажам</p>
+                              <p>26 декабря, 2018</p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-settings">
+                  <div class="swiper-navigation">
+                    <div class="swiper-btn swiper-btnR-prev"><span class="icon-left-open"></span></div>
+                    <div class="swiper-btn swiper-btnR-next"><span class="icon-right-open"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="container container-max">
+          <div class="is-row">
+            <div class="is-col is-col__xl-8 is-col__lg-7 is-col__md-6 is-col__xs-12"><a class="instagram" href="https://www.instagram.com/" target="_blank">
+                <div class="instagram-user">
+                  <div class="instagram-userPhoto"></div>
+                  <div class="instagram-userDesc">
+                    <div class="instagram-userDesc-title"></div>
+                    <div class="instagram-userDesc-link"><i class="icon-instagram"></i></div>
+                    <div class="instagram-userDesc-meta">
+                      <div class="instagram-userDesc-media"></div>
+                      <div class="instagram-userDesc-follows"></div>
+                      <div class="instagram-userDesc-followed_by"></div>
+                    </div>
+                    <div class="instagram-userDesc-desc"></div>
+                  </div>
+                </div>
+                <div class="instagram-photo"></div></a></div>
+            <div class="is-col is-col__xl-4 is-col__lg-5 is-col__md-6 is-col__xs-12">
+              <div class="flex between__xs">
+                <div>
+                  <ul class="list--unstyled margbot60">
+                    <li><a href="#">вход для сотрудников</a></li>
+                    <li><a href="#">контакты</a></li>
+                  </ul>
+                  <div class="social margbot60">
+                    <div class="margbot20"><b>мы в соц.сетях</b></div><a href="#"><i class="icon-vkontakte"></i></a><a href="#"><i class="icon-instagram"></i></a>
+                  </div>
+                </div><a class="btn btn--primary" href="#">связаться с нами</a>
+              </div>
+              <div class="flex between__xs">
+                <div class="page-footer__copy">© Людилюбят 2018</div>
+                <div class="page-footer__logo"><span>Разработка сайта:</span><a href="#"><img src="images/cm_logo.svg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div><!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="scripts/plugins.js"></script>
+<script src="scripts/main.js"></script>
+  </body>
+</html>
