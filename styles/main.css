@@ -344,6 +344,12 @@
 
 /* '' */
 
+.icon-mail:before {
+  content: '\e807';
+}
+
+/* '' */
+
 .icon-right:before {
   content: '\e808';
 }
@@ -356,7 +362,7 @@
 
 /* '' */
 
-.icon-metro:before {
+.icon-metro-2:before {
   content: '\e81a';
 }
 
@@ -2796,7 +2802,8 @@ blockquote ol:last-child {
   justify-content: flex-end;
 }
 
-.top__xs {
+.top__xs,
+.objects-body .item {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -moz-box-align: start;
@@ -2815,7 +2822,6 @@ blockquote ol:last-child {
 .price-item,
 .price-item .target,
 .contacts-title,
-.objects-body .item,
 .corporate-workers i,
 .corporate-contacts .is-col,
 .corporate-contacts i,
@@ -4272,6 +4278,21 @@ hr {
   margin-top: 10px;
 }
 
+.contacts-form {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-bottom: 3px solid #dedede;
+}
+
+.contacts-form label {
+  font-weight: 400;
+}
+
+.contacts .tab-content {
+  margin-bottom: 20px;
+}
+
+#mapOf,
 #map {
   height: 240px;
   position: relative;
@@ -4293,6 +4314,10 @@ hr {
 .objects-body-inner {
   overflow-y: auto;
   height: 100%;
+}
+
+.objects-body-inner .mCustomScrollbar {
+  padding-right: 0;
 }
 
 .objects-body__item {
@@ -5761,6 +5786,11 @@ p img + span {
     margin-bottom: 40px;
   }
 
+  .contacts-form {
+    padding: 30px;
+  }
+
+  #mapOf,
   #map {
     left: -25%;
     height: 550px;
@@ -5777,6 +5807,10 @@ p img + span {
     height: -webkit-calc(100% + 80px);
     height: -moz-calc(100% + 80px);
     height: calc(100% + 80px);
+  }
+
+  .objects-body-inner {
+    padding-right: 30px;
   }
 
   .objects-body__item {
@@ -6342,6 +6376,10 @@ p img + span {
   .conditions-icon {
     width: 107px;
     height: 107px;
+  }
+
+  .contacts-form {
+    padding: 60px;
   }
 
   .objects-body {

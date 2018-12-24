@@ -379,6 +379,9 @@ function initMap() {
 	var hrefId = ['object1', 'object2', 'object3'];
 	var hrefIdO = ['object4', 'object5'];
 
+	var locationsOf = [[59.91701049, 30.31812429], [59.91916157, 30.3251195], [59.91756978, 30.31812429]];
+	var hrefIdOf = ['object1', 'object2', 'object3'];
+
 	var mapOptions = {
 		center: new google.maps.LatLng(59.91916157, 30.3251195),
 		zoom: 16,
@@ -388,12 +391,15 @@ function initMap() {
 		scrollwheel: false
 	};
 	var mapElement = document.getElementById('map');
+	var mapElementOf = document.getElementById('mapOf');
 	var map = new google.maps.Map(mapElement, mapOptions);
+	var mapOf = new google.maps.Map(mapElementOf, mapOptions);
 
 	// const infowindow = new google.maps.InfoWindow();
 
 	var marker = undefined,
 	    markerO = undefined,
+	    markerOf = undefined,
 	    i = undefined;
 	for (i = 0; i < locations.length; i++) {
 		marker = new google.maps.Marker({
@@ -403,16 +409,6 @@ function initMap() {
 		});
 		marker.set('data-href', hrefId[i]);
 		markers.push(marker);
-		// google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
-		// 	return function () {
-		// 		this.setIcon('images/icons/bubble.png');
-		// 	}
-		// })(marker));
-		// google.maps.event.addListener(marker, 'mouseout', (function (marker) {
-		// 	return function () {
-		// 		this.setIcon('images/icons/bubble-a.png');
-		// 	}
-		// })(marker));
 		google.maps.event.addListener(marker, 'click', (function (marker) {
 			return function () {
 				$('.objects-body__item').removeClass('active');
@@ -442,7 +438,27 @@ function initMap() {
 		})(markerO));
 	}
 
+	for (i = 0; i < locationsOf.length; i++) {
+		markerOf = new google.maps.Marker({
+			position: new google.maps.LatLng(locationsOf[i][0], locationsOf[i][1]),
+			map: mapOf,
+			icon: "images/icons/bubble-a.png"
+		});
+		markerOf.set('data-href', hrefIdOf[i]);
+		markers.push(markerOf);
+		google.maps.event.addListener(markerOf, 'click', (function (marker) {
+			return function () {
+				$('.objects-body__item').removeClass('active');
+				var val = marker.get('data-href');
+				$('#' + val).addClass('active');
+				$(".objects-body-inner").mCustomScrollbar("scrollTo", '#' + val);
+				return false;
+			};
+		})(markerOf));
+	}
+
 	moveMarker(map);
+	moveMarker(mapOf);
 }
 
 function moveMarker(map) {

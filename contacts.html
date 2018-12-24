@@ -148,6 +148,7 @@
       </header>
       <main class="page-main">
         <section class="contacts">
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoOHU9S0Ohhctt2VS6Qu3JrmaIjqFQNYk&amp;callback=initMap" defer></script>
           <div class="container">
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
@@ -162,6 +163,44 @@
               </ul>
             </div>
             <div class="tab-content current relative" id="tab-1">
+              <div class="objects-body">
+                <div class="objects-body-inner">
+                  <div class="objects-body__item" id="objectOf1" data-adr="59.91701049, 30.31812429">
+                    <h4>Адрес офиса</h4>
+                    <div class="item">
+                      <div class="icon-location"></div>
+                      <div>г. Санкт-Петербург, <br> ул. Кантемировская, д. 37</div>
+                    </div>
+                  </div>
+                  <div class="objects-body__item" id="objectOf2" data-adr="59.91756978, 30.31812429">
+                    <h4>Отдел маркетинга</h4>
+                    <div class="item">
+                      <div class="icon-phone"></div>
+                      <div>8 (812) 452-42-42</div>
+                    </div>
+                    <div class="item">
+                      <div class="icon-mail"></div>
+                      <div>info@ludilove.ru</div>
+                    </div>
+                  </div>
+                  <div class="objects-body__item" id="objectOf3" data-adr="59.92049517, 30.33250093">
+                    <h4>HR-отдел</h4>
+                    <div class="item">
+                      <div class="icon-phone"></div>
+                      <div>8 (812) 452-42-42</div>
+                    </div>
+                    <div class="item">
+                      <div class="icon-mail"></div>
+                      <div>info@ludilove.ru</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="objects-map">
+                <div id="mapOf"></div>
+              </div>
+            </div>
+            <div class="tab-content relative" id="tab-2">
               <div class="objects-body">
                 <div class="objects-body-inner">
                   <h4>Выберите  пекарню</h4>
@@ -253,12 +292,54 @@
                 </div>
               </div>
               <div class="objects-map">
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoOHU9S0Ohhctt2VS6Qu3JrmaIjqFQNYk&amp;callback=initMap" defer></script>
                 <div id="map"></div>
               </div>
             </div>
-            <div class="tab-content" id="tab-2">2</div>
-            <div class="tab-content" id="tab-3">3</div>
+            <div class="tab-content" id="tab-3">
+              <form class="contacts-form" method="POST" action="">
+                <div class="is-row top__xs">
+                  <div class="is-col is-col__lg-4 is-col__md-5 is-col__xs-12">
+                      <div class="form__group">
+                        <label for="name"><span>Как к вам обращаться?</span>
+                        </label>
+                        <input class="control" type="text" name="name" id="name" placeholder="" required>
+                      </div>
+                      <div class="form__group">
+                        <label for="number"><span>Номер телефона</span>
+                        </label>
+                        <input class="control" type="text" name="phone" id="number" placeholder="" required>
+                      </div>
+                      <div class="form__group">
+                        <label for="mail"><span>Email</span>
+                        </label>
+                        <input class="control" type="mail" name="mail" id="mail" placeholder="" required>
+                      </div>
+                    <div class="form__group">
+                      <div class="file_upload"><span class="icon-plus"></span><span class="button">Прикрепить  фото</span>
+                        <input type="file">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="is-col is-col__lg-8 is-col__md-7 is-col__xs-12">
+                    <div class="form__group">
+                        <label for="com">Введите сообщение</label>
+                        <textarea class="control" name="com" id="com" placeholder="" rows="12"></textarea>
+                    </div>
+                    <div class="is-row between__xs">
+                      <div class="is-col is-col__lg-6 is-col__xs-12">
+                        <div class="checkbox form__group">
+                          <input type="checkbox" id="signOf">
+                          <label for="signOf">Я согласен на обработку моих ПДН, ознакомиться с политикой конфинденциальности</label>
+                        </div>
+                      </div>
+                      <div class="is-col is-col__lg-5 is-col__xs-12">
+                        <button class="btn btn--primary btn--full" type="submit">отправить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </main>
