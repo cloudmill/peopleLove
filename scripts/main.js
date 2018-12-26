@@ -387,7 +387,7 @@ function initMap() {
 		zoom: 16,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		mapTypeControl: false,
-		zoomControl: false,
+		zoomControl: true,
 		scrollwheel: false
 	};
 	var mapElement = document.getElementById('map');
