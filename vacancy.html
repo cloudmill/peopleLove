@@ -78,6 +78,39 @@
         </div>
       </form>
     </div>
+    <div class="mfp-hide white-popup-block" id="send">
+      <div class="close-popup popup-modal-dismiss"><img src="images/icons/close-pop.png" alt="close"></div>
+      <div class="text--center">
+        <h3>Отправить анкету</h3>
+      </div>
+      <form method="POST" action="">
+          <div class="form__group">
+            <label for="name"><span>ФИО*</span>
+            </label>
+            <input class="control" type="text" name="name" id="name" placeholder="" required>
+          </div>
+          <div class="form__group">
+            <label for="number"><span>Как с вами связаться? *</span>
+            </label>
+            <input class="control" type="text" name="phone" id="number" placeholder="" required>
+          </div>
+          <div class="form__group">
+            <label for="mail"><span>Email</span>
+            </label>
+            <input class="control" type="email" name="mail" id="mail" placeholder="" required>
+          </div>
+        <div class="form__group">
+          <div class="file_upload"><span class="icon-plus"></span><span class="button">Прикрепить резюме</span>
+            <input type="file">
+          </div>
+        </div>
+          <div class="checkbox form__group">
+            <input type="checkbox" id="sign">
+            <label for="sign">Я согласен на обработку моих ПДН, ознакомиться с политикой конфинденциальности</label>
+          </div>
+        <button class="btn btn--primary btn--full" type="submit">Отправить</button>
+      </form>
+    </div>
     <div class="scrollup"><i class="icon-up-open"></i><span>наверх</span></div>
     <div class="pages">
       <header class="page-header">
@@ -126,7 +159,7 @@
                 </div>
               </nav>
             </div>
-            <div class="is-col page-header__loc hidden__sm hidden__xs"><a href="#"><i class="icon-location"></i><span>пекарни</span></a></div>
+            <div class="is-col page-header__loc hidden__sm hidden__xs"><a href="#"><img src="images/icons/mapIco.png" alt=""><span>пекарни</span></a></div>
             <div class="is-col social hidden__sm hidden__xs hidden__md"><a href="#"><i class="icon-vkontakte"></i></a><a href="#"><i class="icon-instagram"></i></a></div>
             <div class="is-col"><a class="page-header__cart" href="#"><i class="icons icons--cart"></i><span>3</span></a></div>
           </div>
@@ -149,7 +182,42 @@
                 <div class="accordion-header">
                   <h5>Посмотреть вакансии</h5>
                 </div>
-                <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid, aperiam autem, distinctio doloribus eligendi error hic in molestiae mollitia praesentium quam quisquam recusandae reiciendis saepe sapiente, veniam vero voluptate.</div>
+                <div class="accordion-content">
+                  <div class="accordion-content__item">
+                    <h5>Название вакансии здесь</h5>
+                    <div class="subheader">условия</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul>
+                    <div class="subheader">требования</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul><a class="btn btn--primary popup-modal" href="#send">отправить анкету</a>
+                  </div>
+                  <div class="accordion-content__item">
+                    <h5>Название вакансии здесь</h5>
+                    <div class="subheader">условия</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul>
+                    <div class="subheader">требования</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul><a class="btn btn--primary popup-modal" href="#send">отправить анкету</a>
+                  </div>
+                </div>
               </div>
               <h3>Вакансии производства</h3>
               <div class="is-col__xl-6 is-col__lg-7">
@@ -159,7 +227,42 @@
                 <div class="accordion-header">
                   <h5>Посмотреть вакансии</h5>
                 </div>
-                <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid, aperiam autem, distinctio doloribus eligendi error hic in molestiae mollitia praesentium quam quisquam recusandae reiciendis saepe sapiente, veniam vero voluptate.</div>
+                <div class="accordion-content">
+                  <div class="accordion-content__item">
+                    <h5>Название вакансии здесь</h5>
+                    <div class="subheader">условия</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul>
+                    <div class="subheader">требования</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul><a class="btn btn--primary popup-modal" href="#send">отправить анкету</a>
+                  </div>
+                  <div class="accordion-content__item">
+                    <h5>Название вакансии здесь</h5>
+                    <div class="subheader">условия</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul>
+                    <div class="subheader">требования</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul><a class="btn btn--primary popup-modal" href="#send">отправить анкету</a>
+                  </div>
+                </div>
               </div>
               <h3>Вакансии офиса</h3>
               <div class="is-col__xl-6 is-col__lg-7">
@@ -169,7 +272,42 @@
                 <div class="accordion-header">
                   <h5>Посмотреть вакансии</h5>
                 </div>
-                <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid, aperiam autem, distinctio doloribus eligendi error hic in molestiae mollitia praesentium quam quisquam recusandae reiciendis saepe sapiente, veniam vero voluptate.</div>
+                <div class="accordion-content">
+                  <div class="accordion-content__item">
+                    <h5>Название вакансии здесь</h5>
+                    <div class="subheader">условия</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul>
+                    <div class="subheader">требования</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul><a class="btn btn--primary popup-modal" href="#send">отправить анкету</a>
+                  </div>
+                  <div class="accordion-content__item">
+                    <h5>Название вакансии здесь</h5>
+                    <div class="subheader">условия</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul>
+                    <div class="subheader">требования</div>
+                    <ul>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                      <li>Наша программа заботы о сотрудниках основывается на четырёх ключевых ценностях</li>
+                    </ul><a class="btn btn--primary popup-modal" href="#send">отправить анкету</a>
+                  </div>
+                </div>
               </div>
               <div class="is-col__lg-8">
                 <h3>Если Вы не нашли интересующую вакансию, заполните анкету ниже и мы свяжемся с Вами при ее появлении.</h3>
@@ -195,7 +333,7 @@
                           <div class="form__group">
                             <label for="mail"><span>Email</span>
                             </label>
-                            <input class="control" type="mail" name="mail" id="mail" placeholder="" required>
+                            <input class="control" type="email" name="mail" id="mail" placeholder="" required>
                           </div>
                       </div>
                     </div>
