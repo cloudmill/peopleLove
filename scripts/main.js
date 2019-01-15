@@ -280,6 +280,17 @@ $(document).ready(function () {
 	});
 	// fullpage
 
+	//form
+	$('.btn--js').click(function () {
+		$(this).closest('.guest-form').addClass('sent');
+		return false; // TEMP
+	});
+	$(".sent--js").on("click", function () {
+		$(this).closest('.guest-form').removeClass('sent');
+		return false;
+	});
+	//form
+
 	// works--js
 	$('.works--js').click(function () {
 		$(this).toggleClass('active');

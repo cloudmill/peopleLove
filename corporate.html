@@ -148,7 +148,16 @@
                     <li class="main-nav__item"><a class="main-nav__link" href="#">Условия предзаказа</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="#">Карта гостя</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="#">Работа</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
+                    <li class="main-nav__item main-nav__item--parent"><a class="main-nav__link" href="#">О нас</a>
+                      <div class="submenu">
+                        <ul class="sub-nav">
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">Правовая информация</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">Корпоративные продажи</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">Новости и акции</a></li>
+                          <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                    </li>
                   </ul>
                   <div class="hidden__md hidden__lg hidden__xl margTop-auto">
                     <div class="flex between__xs middle__xs">
@@ -175,36 +184,6 @@
             <h1>Корпоративные продажи</h1>
             <div class="slider-guest swiper-container">
               <div class="swiper-wrapper">
-                <div class="guest-item swiper-slide">
-                  <div class="inner">
-                    <h2>Круглосуточные поставки</h2>
-                    <h6>Радуйте людей вкусными плюшками без пауз.</h6><a class="btn btn--primary" href="#">Заявка на сотрудничество</a>
-                  </div><img src="images/corporate.jpg" alt="">
-                </div>
-                <div class="guest-item swiper-slide">
-                  <div class="inner">
-                    <h2>Круглосуточные поставки</h2>
-                    <h6>Радуйте людей вкусными плюшками без пауз.</h6><a class="btn btn--primary" href="#">Заявка на сотрудничество</a>
-                  </div><img src="images/corporate.jpg" alt="">
-                </div>
-                <div class="guest-item swiper-slide">
-                  <div class="inner">
-                    <h2>Круглосуточные поставки</h2>
-                    <h6>Радуйте людей вкусными плюшками без пауз.</h6><a class="btn btn--primary" href="#">Заявка на сотрудничество</a>
-                  </div><img src="images/corporate.jpg" alt="">
-                </div>
-                <div class="guest-item swiper-slide">
-                  <div class="inner">
-                    <h2>Круглосуточные поставки</h2>
-                    <h6>Радуйте людей вкусными плюшками без пауз.</h6><a class="btn btn--primary" href="#">Заявка на сотрудничество</a>
-                  </div><img src="images/corporate.jpg" alt="">
-                </div>
-                <div class="guest-item swiper-slide">
-                  <div class="inner">
-                    <h2>Круглосуточные поставки</h2>
-                    <h6>Радуйте людей вкусными плюшками без пауз.</h6><a class="btn btn--primary" href="#">Заявка на сотрудничество</a>
-                  </div><img src="images/corporate.jpg" alt="">
-                </div>
                 <div class="guest-item swiper-slide">
                   <div class="inner">
                     <h2>Круглосуточные поставки</h2>
@@ -301,15 +280,19 @@
                       <input class="control" type="text" name="mess" id="mess" placeholder="" required>
                     </div>
                 </div>
-                <div class="is-col is-col__lg-8 is-col__md-6 is-col__xs-12">
+                <div class="is-col is-col__lg-9 is-col__md-6 is-col__xs-12">
                   <div class="checkbox">
                     <input type="checkbox" id="sign">
                     <label for="sign">Я согласен на обработку моих ПДН, ознакомиться с политикой конфинденциальности</label>
                   </div>
                 </div>
-                <div class="is-col is-col__lg-4 is-col__md-6 is-col__xs-12">
-                  <button class="btn btn--primary btn--full" type="submit">отправить</button>
+                <div class="is-col is-col__lg-3 is-col__md-6 is-col__xs-12">
+                  <button class="btn btn--primary btn--full btn--js" type="submit">отправить</button>
                 </div>
+              </div>
+              <div class="text--center sent-form">
+                <h4>Спасибо! Ваша заявка принята. <br> Мы свяжемся с Вами в ближайшее время.</h4>
+                <div class="is-col__lg-3 is-col__md-6 is-col__xs-12"><a class="btn btn--primary btn--full sent--js">отправить еще</a></div>
               </div>
             </form>
             <p>Условия программы лояльности «ЛюдиЛюбят» могут изменяться, актуальную информацию можно найти на сайте и в соц.сетях компании в разделе «карта гостя».</p>
