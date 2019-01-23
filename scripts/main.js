@@ -282,11 +282,11 @@ $(document).ready(function () {
 
 	//form
 	$('.btn--js').click(function () {
-		$(this).closest('.guest-form').addClass('sent');
+		$(this).closest('.form').addClass('sent');
 		return false; // TEMP
 	});
 	$(".sent--js").on("click", function () {
-		$(this).closest('.guest-form').removeClass('sent');
+		$(this).closest('.form').removeClass('sent');
 		return false;
 	});
 	//form
@@ -380,7 +380,7 @@ $(window).on("load", function () {
 	setTimeout(function () {
 		$('.preloader-wrapper').fadeOut();
 		$('body').removeClass('preloader-site');
-	}, 2000);
+	}, 0);
 });
 
 function initMap() {

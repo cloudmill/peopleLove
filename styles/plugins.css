@@ -2179,15 +2179,15 @@ yx-axis
 	}
 
 	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-		background-color: #ff7200;
+		background-color: #a5a5a5;
 	}
 
 	.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
-		background-color: #ff7200;
+		background-color: #a5a5a5;
 	}
 	.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 	.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
-		background-color: #ff7200;
+		background-color: #a5a5a5;
 	}
 
 	.mCSB_scrollTools .mCSB_buttonUp,

@@ -80,38 +80,46 @@
     </div>
     <div class="mfp-hide white-popup-block" id="send">
       <div class="close-popup popup-modal-dismiss"><img src="images/icons/close-pop.png" alt="close"></div>
-      <div class="text--center">
-        <h3>Отправить анкету</h3>
-      </div>
-      <form method="POST" action="">
-          <div class="form__group">
-            <label for="name"><span>ФИО*</span>
-            </label>
-            <input class="control" type="text" name="name" id="name" placeholder="" required>
-          </div>
-          <div class="form__group">
-            <label for="number"><span>Как с вами связаться? *</span>
-            </label>
-            <input class="control" type="text" name="phone" id="number" placeholder="" required>
-          </div>
-          <div class="form__group">
-            <label for="mail"><span>Email</span>
-            </label>
-            <input class="control" type="email" name="mail" id="mail" placeholder="" required>
-          </div>
-        <div class="form__group">
-          <div class="file_upload"><span class="icon-plus"></span><span class="button">Прикрепить резюме</span>
-            <input type="file">
-          </div>
+      <form class="form" method="POST" action="">
+        <div class="text--center">
+          <h3>Отправить анкету</h3>
         </div>
-          <div class="checkbox form__group">
-            <input type="checkbox" id="sign">
-            <label for="sign">Я согласен на обработку моих ПДН, ознакомиться с политикой конфинденциальности</label>
+        <div>
+            <div class="form__group">
+              <label for="name"><span>ФИО*</span>
+              </label>
+              <input class="control" type="text" name="name" id="name" placeholder="" required>
+            </div>
+            <div class="form__group">
+              <label for="number"><span>Как с вами связаться? *</span>
+              </label>
+              <input class="control" type="text" name="phone" id="number" placeholder="" required>
+            </div>
+            <div class="form__group">
+              <label for="mail"><span>Email</span>
+              </label>
+              <input class="control" type="email" name="mail" id="mail" placeholder="" required>
+            </div>
+          <div class="form__group">
+            <div class="file_upload"><span class="icon-plus"></span><span class="button">Прикрепить резюме</span>
+              <input type="file">
+            </div>
           </div>
-        <button class="btn btn--primary btn--full" type="submit">Отправить</button>
+            <div class="checkbox form__group">
+              <input type="checkbox" id="sign">
+              <label for="sign">Я согласен на обработку моих ПДН, ознакомиться с политикой конфинденциальности</label>
+            </div>
+          <button class="btn btn--primary btn--full btn--js" type="submit">Отправить</button>
+        </div>
+        <div class="text--center sent-form">
+          <h4>Спасибо! Ваша заявка принята. <br> Мы свяжемся с Вами в ближайшее время.</h4>
+          <div class="is-col__md-6 is-col__xs-12"><a class="btn btn--primary btn--full sent--js">отправить еще</a></div>
+        </div>
       </form>
     </div>
-    <div class="scrollup"><i class="icon-up-open"></i><span>наверх</span></div>
+    <div class="scrollup">
+      <div class="scrollup-inner"><i class="icon-up-open"></i><span>наверх</span></div>
+    </div>
     <div class="pages">
       <header class="page-header">
         <div class="container container-max">
@@ -321,7 +329,7 @@
               <div class="is-col__lg-8">
                 <h3>Если Вы не нашли интересующую вакансию, заполните анкету ниже и мы свяжемся с Вами при ее появлении.</h3>
               </div>
-              <form class="guest-form" method="POST" action="">
+              <form class="guest-form form" method="POST" action="">
                 <h3>Заполните анкету</h3>
                 <div class="is-row">
                   <div class="is-col is-col__lg-6 is-col__xs-12">
@@ -346,14 +354,11 @@
                           </div>
                       </div>
                     </div>
-                    <div class="form__group">
-                      <label>Открытые вакансии</label>
-                      <select style="width:100%;">
-                        <option selected>Название вакансии</option>
-                        <option>Название вакансии</option>
-                        <option>Название вакансии</option>
-                      </select>
-                    </div>
+                      <div class="form__group">
+                        <label for="letter"><span>Сопроводительное письмо</span>
+                        </label>
+                        <input class="control" type="text" name="letter" id="letter" placeholder="" required>
+                      </div>
                   </div>
                   <div class="is-col is-col__lg-6 is-col__xs-12">
                     <div class="is-row bottom__xs">
@@ -367,8 +372,8 @@
                         <div class="form__group">
                           <label>Гражданство*</label>
                           <div class="checkbox">
-                            <input type="checkbox" id="sign" checked>
-                            <label for="sign">Россия</label>
+                            <input type="checkbox" id="sign4" checked>
+                            <label for="sign4">Россия</label>
                           </div>
                         </div>
                       </div>
@@ -405,8 +410,12 @@
                     </div>
                   </div>
                   <div class="is-col is-col__xs-12">
-                    <button class="btn btn--primary" type="submit">Отправить анкету</button>
+                    <button class="btn btn--primary btn--js" type="submit">Отправить анкету</button>
                   </div>
+                </div>
+                <div class="text--center sent-form">
+                  <h4>Спасибо! Ваша заявка принята. <br> Мы свяжемся с Вами в ближайшее время.</h4>
+                  <div class="is-col__lg-3 is-col__md-6 is-col__xs-12"><a class="btn btn--primary btn--full sent--js">отправить еще</a></div>
                 </div>
               </form>
             </div>
