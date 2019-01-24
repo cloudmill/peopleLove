@@ -548,6 +548,11 @@
 .white-popup-block .table {
   border: 0;
   border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.white-popup-block .table img {
+  height: 120px;
 }
 
 .white-popup-block .btn {
@@ -4666,7 +4671,6 @@ hr {
 }
 
 .category img {
-  height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
