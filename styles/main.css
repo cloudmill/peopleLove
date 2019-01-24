@@ -3029,10 +3029,10 @@ blockquote ol:last-child {
 
 .submenu {
   display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -3683,7 +3683,7 @@ hr {
   bottom: 0;
   top: 0;
   right: 0;
-  padding: 25px 10px 25px;
+  padding: 25px 10px 15px;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3717,7 +3717,7 @@ hr {
 }
 
 .gallery-inner img {
-  width: 17px !important;
+  width: 17%;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -3768,10 +3768,6 @@ hr {
 .gallery-inner h5 {
   margin-top: 6px;
   height: 60px;
-}
-
-.gallery-inner h5 img {
-  height: auto;
 }
 
 .gallery-item {
@@ -5890,6 +5886,7 @@ p img + span {
 
   .gallery-inner img {
     margin: 0 auto 10px;
+    width: auto;
   }
 
   .gallery-inner h5 {
@@ -6588,7 +6585,6 @@ p img + span {
   }
 
   .gallery-inner img {
-    width: 33px !important;
     margin: 0 auto 15px;
   }
 
