@@ -477,10 +477,10 @@
   flex-direction: column;
   color: #333;
   background-color: rgba(255, 255, 255, 0.85);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
@@ -488,10 +488,10 @@
 
 .scrollup i {
   color: #ff7200;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   font-size: 20px;
 }
 
@@ -1469,10 +1469,10 @@ section {
 
 a {
   color: #333;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 a:hover,
@@ -2988,10 +2988,10 @@ blockquote ol:last-child {
   margin-left: 4px;
   font-size: 12px;
   vertical-align: baseline;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .main-nav__item--parent.active > .main-nav__link:after {
@@ -3029,10 +3029,10 @@ blockquote ol:last-child {
 
 .submenu {
   display: none;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -3622,6 +3622,14 @@ body.fixed {
   object-fit: contain;
 }
 
+.mainSection .gallery-item {
+  height: 140px;
+}
+
+.mainSection .gallery-column-fh {
+  width: 100vw;
+}
+
 hr {
   border: none;
   margin: 20px 0;
@@ -3717,7 +3725,7 @@ hr {
 }
 
 .gallery-inner img {
-  width: 17%;
+  width: 17% !important;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -3773,7 +3781,7 @@ hr {
 .gallery-item {
   position: relative;
   color: #fff;
-  height: 140px;
+  height: auto;
 }
 
 .gallery-item .title {
@@ -3835,10 +3843,10 @@ hr {
   font-size: 12px;
   color: #404041;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .gallery-item .link :before {
@@ -3863,10 +3871,10 @@ hr {
   bottom: 0;
   top: 0;
   background-color: transparent;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .gallery-item:hover {
@@ -4950,10 +4958,10 @@ h1 {
 
 .slider-guest .swiper-btn {
   color: #fff;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   margin-left: 0;
   margin-right: 0;
 }
@@ -5244,10 +5252,10 @@ p img + span {
 }
 
 .works-review .swiper-btn {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .works-review .swiper-btn span {
@@ -5440,6 +5448,10 @@ p img + span {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+  }
+
+  .mainSection .gallery-item {
+    height: 200px;
   }
 }
 
@@ -5872,6 +5884,14 @@ p img + span {
     z-index: 10;
   }
 
+  .mainSection .gallery-item {
+    height: auto;
+  }
+
+  .mainSection .gallery-column-fh {
+    width: 20vw;
+  }
+
   .gallery-column-h {
     width: 40vw;
   }
@@ -6227,10 +6247,10 @@ p img + span {
   }
 
   .slider-guest .swiper-slide {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
     height: auto;
   }
 
@@ -7090,6 +7110,24 @@ p img + span {
 }
 
 @media screen and (max-width: 767px) {
+  .table .visible__sm.visible__xs {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .table tr {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7183,6 +7221,10 @@ p img + span {
 
   .main-nav__collapse .main-nav .sub-nav {
     font-size: 12px;
+  }
+
+  .mainSection .gallery-column-f {
+    width: 50%;
   }
 
   .about-item,
