@@ -310,9 +310,12 @@ $(document).ready(function () {
 	//tabs
 
 	//isotop
-	var $grid = $('.grid').isotope({
-		itemSelector: '.grid-item',
-		layoutMode: 'fitRows'
+	var $grid = $('.grid');
+	$grid.imagesLoaded(function () {
+		$grid.isotope({
+			itemSelector: '.grid-item',
+			layoutMode: 'fitRows'
+		});
 	});
 	$('#filters').on('click', 'li', function () {
 		$('#filters li').removeClass('active');
