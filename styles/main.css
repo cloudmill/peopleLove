@@ -5921,7 +5921,7 @@ p img + span {
 
   .gallery-inner img {
     margin: 0 auto 10px;
-    width: auto;
+    width: auto !important;
   }
 
   .gallery-inner h5 {
