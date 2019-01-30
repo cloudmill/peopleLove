@@ -276,7 +276,31 @@ $(document).ready(function () {
 	// fullpage
 	$('#fullpage').fullpage({
 		verticalCentered: true,
-		responsiveWidth: 767
+		scrollingSpeed: 1000,
+		autoScrolling: true,
+		fitToSection: true,
+		fitToSectionDelay: 2000,
+		onLeave: function onLeave(index, nextIndex, direction) {
+			if (direction == "up") {
+				$(".section .animated").removeClass("slideInLeft");
+				$(".section").removeClass("down");
+				$(".section").removeClass("next");
+				$(".section").removeClass("prev");
+				$("#fullpage .section:nth-child(" + nextIndex + ")").addClass("up");
+				$("#fullpage .section:nth-child(" + nextIndex + ")").next().addClass("next up");
+				$("#fullpage .section:nth-child(" + nextIndex + ")").prev().addClass("prev up");
+				$("#fullpage .section:nth-child(" + nextIndex + ") .animated").addClass("slideInLeft");
+			} else {
+				$(".section .animated").removeClass("slideInLeft");
+				$(".section").removeClass("up");
+				$(".section").removeClass("next");
+				$(".section").removeClass("prev");
+				$("#fullpage .section:nth-child(" + nextIndex + ")").addClass("down");
+				$("#fullpage .section:nth-child(" + nextIndex + ")").next().addClass("next down");
+				$("#fullpage .section:nth-child(" + nextIndex + ")").prev().addClass("prev down");
+				$("#fullpage .section:nth-child(" + nextIndex + ") .animated").addClass("slideInLeft");
+			}
+		}
 	});
 	// fullpage
 

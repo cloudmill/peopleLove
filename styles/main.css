@@ -592,6 +592,62 @@
   margin-top: 0;
 }
 
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-180%, 0, 0);
+    transform: translate3d(-180%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-moz-keyframes slideInLeft {
+  from {
+    -moz-transform: translate3d(-180%, 0, 0);
+    transform: translate3d(-180%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-180%, 0, 0);
+    -moz-transform: translate3d(-180%, 0, 0);
+    transform: translate3d(-180%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  -moz-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 body.preloader-site {
   overflow: hidden;
 }
@@ -3911,6 +3967,252 @@ hr {
   width: 1.5125em;
 }
 
+.page-index.fp-viewing-4 .fullpage-wrapper {
+  -webkit-transform: translate3d(0px, 0px, 0px) !important;
+  -moz-transform: translate3d(0px, 0px, 0px) !important;
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.section:not(.fp-auto-height) {
+  position: fixed !important;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-animation: 1s linear;
+  -moz-animation: 1s linear;
+  animation: 1s linear;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.section:nth-child(1) {
+  z-index: 10;
+}
+
+.section:nth-child(2) {
+  z-index: 9;
+}
+
+.section:nth-child(3) {
+  z-index: 8;
+}
+
+.section:nth-child(4) {
+  z-index: 7;
+}
+
+.section:nth-child(5) {
+  z-index: 11;
+}
+
+.section:nth-child(6) {
+  z-index: 11;
+}
+
+.section.fp-completely.active {
+  z-index: 20;
+}
+
+.section.prev.down {
+  -webkit-animation-name: toup;
+  -moz-animation-name: toup;
+  animation-name: toup;
+}
+
+.section.active.up {
+  -webkit-animation-name: fromup;
+  -moz-animation-name: fromup;
+  animation-name: fromup;
+}
+
+.section.active.down {
+  -webkit-animation-name: fromdown;
+  -moz-animation-name: fromdown;
+  animation-name: fromdown;
+  z-index: 12;
+}
+
+.section.next.up {
+  -webkit-animation-name: todown;
+  -moz-animation-name: todown;
+  animation-name: todown;
+  z-index: 12;
+}
+
+@-webkit-keyframes fromdown {
+  from {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-moz-keyframes fromdown {
+  from {
+    -moz-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+
+  100% {
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fromdown {
+  from {
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes toup {
+  from {
+    z-index: 20;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  100% {
+    z-index: 20;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@-moz-keyframes toup {
+  from {
+    z-index: 20;
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  100% {
+    z-index: 20;
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes toup {
+  from {
+    z-index: 20;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  100% {
+    z-index: 20;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes fromup {
+  from {
+    z-index: 20;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    z-index: 20;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-moz-keyframes fromup {
+  from {
+    z-index: 20;
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    z-index: 20;
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fromup {
+  from {
+    z-index: 20;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    z-index: 20;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes todown {
+  from {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  100% {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+}
+
+@-moz-keyframes todown {
+  from {
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  100% {
+    -moz-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+}
+
+@keyframes todown {
+  from {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  100% {
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+}
+
 .about .tabs {
   margin-bottom: 20px;
 }
@@ -3955,6 +4257,7 @@ hr {
   color: #fff;
   position: relative;
   padding: 90px 0 130px;
+  background-position: center 80%;
 }
 
 .about-item .breadcrumbs {
