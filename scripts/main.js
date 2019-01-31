@@ -279,6 +279,7 @@ $(document).ready(function () {
 		scrollingSpeed: 1000,
 		autoScrolling: true,
 		fitToSection: true,
+		responsiveWidth: 767,
 		fitToSectionDelay: 2000,
 		onLeave: function onLeave(index, nextIndex, direction) {
 			if (direction == "up") {
