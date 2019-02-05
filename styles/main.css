@@ -3516,6 +3516,11 @@ hr {
     @media screen and (min-width: 768px) {
       .gallery-column-fh {
         width: 20%; } }
+  .gallery .grid-sizer {
+    width: 50%; }
+    @media screen and (min-width: 768px) {
+      .gallery .grid-sizer {
+        width: 20%; } }
   .gallery-inner {
     z-index: 9;
     position: absolute;

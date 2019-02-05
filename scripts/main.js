@@ -339,7 +339,11 @@ $(document).ready(function () {
 	$grid.imagesLoaded(function () {
 		$grid.isotope({
 			itemSelector: '.grid-item',
-			layoutMode: 'fitRows'
+			layoutMode: 'fitRows',
+			masonry: {
+				columnWidth: '.grid-sizer',
+				gutter: 0
+			}
 		});
 	});
 	$('#filters').on('click', 'li', function () {
