@@ -337,14 +337,16 @@ $(document).ready(function () {
 	//isotop
 	var $grid = $('.grid');
 	$grid.imagesLoaded(function () {
-		$grid.isotope({
-			itemSelector: '.grid-item',
-			layoutMode: 'fitRows',
-			masonry: {
-				columnWidth: '.grid-sizer',
-				gutter: 0
-			}
-		});
+		setTimeout(function () {
+			$grid.isotope({
+				itemSelector: '.grid-item',
+				layoutMode: 'fitRows',
+				masonry: {
+					columnWidth: '.grid-sizer',
+					gutter: 0
+				}
+			});
+		}, 1000);
 	});
 	$('#filters').on('click', 'li', function () {
 		$('#filters li').removeClass('active');
