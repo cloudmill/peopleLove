@@ -90,7 +90,7 @@
       .accordion--border .accordion-header:hover::before {
         color: #ff7200; }
 
-.icons--corporate-1:before, .icons--corporate-2:before, .icons--corporate-3:before, .icons--corporate-4:before, .icons--guest-1:before, .icons--guest-2:before, .icons--guest-3:before, .icons--guest-4:before, .icons--guest-5:before, .icons--cond-1:before, .icons--cond-2:before, .icons--cond-3:before, .icons--cond-4:before, .icons--info:before, .icons--carto:before, .icons--cartw:before, .icons--cart:before, .icons--mail:before, .icons--phone:before, .icons--plane:before, .icons--arrowDown:before, .icons--arrowRight:before, .gallery-inner .btn--primary:hover .icons:before {
+.icons--corporate-1:before, .icons--corporate-2:before, .icons--corporate-3:before, .icons--corporate-4:before, .icons--guest-1:before, .icons--guest-2:before, .icons--guest-3:before, .icons--guest-4:before, .icons--guest-5:before, .icons--cond-1:before, .icons--cond-2:before, .icons--cond-3:before, .icons--cond-4:before, .icons--info:before, .icons--carto:before, .icons--cartw:before, .icons--cart:before, .icons--mail:before, .icons--phone:before, .icons--plane:before, .icons--arrowDown:before, .icons--arrowRight:before, .gallery-item .btn-abs.btn--primary:hover .icons:before {
   background-image: url("../images/svg/sprite.svg");
   -moz-background-size: 82.4375em 5.25em;
        background-size: 82.4375em 5.25em; }
@@ -3521,13 +3521,6 @@ hr {
     @media screen and (min-width: 768px) {
       .gallery .grid-sizer {
         width: 20%; } }
-  .gallery-link {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 74%; }
   .gallery-inner {
     z-index: 9;
     position: absolute;
@@ -3535,7 +3528,6 @@ hr {
     bottom: 0;
     top: 0;
     right: 0;
-    padding: 25px 10px 15px;
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3558,12 +3550,9 @@ hr {
     -webkit-transition: opacity;
     -moz-transition: opacity;
     -o-transition: opacity;
-    transition: opacity; }
-    .gallery-inner .btn--primary:hover .icons:before {
-      width: 1.3125em;
-      height: 1.625em;
-      background-position: -10.125em -0.625em;
-      width: 1.5125em; }
+    transition: opacity;
+    padding: 25px 10px 15px;
+    text-decoration: none; }
     @media screen and (min-width: 992px) {
       .gallery-inner {
         padding: 40px 10px 25px; } }
@@ -3583,11 +3572,12 @@ hr {
           margin: 0 auto 10px; } }
       @media screen and (min-width: 992px) {
         .gallery-inner img {
-          margin: 0 auto 15px;
-          width: auto !important; } }
+          width: 20% !important;
+          margin: 0 auto 15px; } }
       @media screen and (min-width: 1280px) {
         .gallery-inner img {
-          margin: 0 auto 25px; } }
+          margin: 0 auto 25px;
+          width: auto !important; } }
     .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle, .gallery-inner .share-soc {
       display: -webkit-box;
       display: -webkit-flex;
@@ -3606,29 +3596,15 @@ hr {
               align-items: center; }
       @media screen and (min-width: 992px) {
         .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle, .gallery-inner .share-soc {
+          height: 30px;
           -webkit-box-pack: justify;
           -webkit-justify-content: space-between;
              -moz-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between; } }
-    @media screen and (max-width: 1489px) {
-      .gallery-inner .btn {
-        padding: 10px 15px;
-        font-size: 12px;
-        line-height: 1;
-        -moz-border-radius: 25px;
-             border-radius: 25px;
-        min-width: inherit;
-        height: 40px; } }
-    @media screen and (max-width: 1279px) {
-      .gallery-inner .btn {
-        padding: 7px 11px;
-        font-size: 9px;
-        line-height: 1;
-        -moz-border-radius: 25px;
-             border-radius: 25px;
-        min-width: inherit;
-        height: 30px; } }
+      @media screen and (min-width: 1280px) {
+        .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle, .gallery-inner .share-soc {
+          height: 50px; } }
     .gallery-inner a:not(.btn) {
       text-transform: uppercase;
       font-size: 9px;
@@ -3654,6 +3630,48 @@ hr {
     @media screen and (min-width: 768px) {
       .gallery-item {
         height: auto; } }
+    .gallery-item .btn-abs {
+      position: absolute;
+      left: 10px;
+      bottom: 15px;
+      z-index: 10;
+      opacity: 0;
+      text-align: center;
+      right: 10px; }
+      @media screen and (min-width: 992px) {
+        .gallery-item .btn-abs {
+          bottom: 25px;
+          right: auto; } }
+      @media screen and (min-width: 1280px) {
+        .gallery-item .btn-abs {
+          bottom: 30px; } }
+      @media screen and (min-width: 1500px) {
+        .gallery-item .btn-abs {
+          left: 25px;
+          bottom: 40px; } }
+      .gallery-item .btn-abs.btn--primary:hover .icons:before {
+        width: 1.3125em;
+        height: 1.625em;
+        background-position: -10.125em -0.625em;
+        width: 1.5125em; }
+    @media screen and (max-width: 1489px) {
+      .gallery-item .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+        line-height: 1;
+        -moz-border-radius: 25px;
+             border-radius: 25px;
+        min-width: inherit;
+        height: 40px; } }
+    @media screen and (max-width: 1279px) {
+      .gallery-item .btn {
+        padding: 7px 11px;
+        font-size: 9px;
+        line-height: 1;
+        -moz-border-radius: 25px;
+             border-radius: 25px;
+        min-width: inherit;
+        height: 30px; } }
     .gallery-item .title {
       top: 10%;
       left: 15px;
@@ -3755,6 +3773,7 @@ hr {
       transition: all 0.3s linear; }
     .gallery-item:hover {
       color: #333; }
+      .gallery-item:hover .btn-abs,
       .gallery-item:hover .gallery-inner {
         opacity: 1; }
       .gallery-item:hover .link {
