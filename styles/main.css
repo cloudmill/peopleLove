@@ -3553,6 +3553,9 @@ hr {
     transition: opacity;
     padding: 25px 10px 15px;
     text-decoration: none; }
+    @media screen and (min-width: 768px) {
+      .gallery-inner {
+        padding: 15px 10px 15px; } }
     @media screen and (min-width: 992px) {
       .gallery-inner {
         padding: 40px 10px 25px; } }
@@ -3567,8 +3570,12 @@ hr {
       height: auto;
       margin: 0 auto;
       display: block; }
+      @media screen and (min-width: 480px) {
+        .gallery-inner img {
+          width: 21% !important; } }
       @media screen and (min-width: 768px) {
         .gallery-inner img {
+          width: 21% !important;
           margin: 0 auto 10px; } }
       @media screen and (min-width: 992px) {
         .gallery-inner img {
@@ -4495,7 +4502,11 @@ hr {
 #map {
   height: 240px;
   position: relative;
-  width: 90%; }
+  width: 100%; }
+  @media screen and (min-width: 480px) {
+    #mapOf,
+    #map {
+      width: 90%; } }
   @media screen and (min-width: 768px) {
     #mapOf,
     #map {
@@ -4698,6 +4709,12 @@ hr {
   .cart .table {
     border-collapse: separate;
     padding: 15px 15px 0; }
+    .cart .table tbody td {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+         -moz-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
     .cart .table td {
       padding: 15px 0; }
     @media screen and (min-width: 768px) {
@@ -4909,6 +4926,13 @@ hr {
   #filters li:hover, #filters li.active {
     color: #ff7200;
     border-color: #ff7200; }
+
+.white-popup-block .table tbody td {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .news {
   margin-bottom: 80px; }
