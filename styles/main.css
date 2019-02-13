@@ -3626,7 +3626,9 @@ hr {
   .gallery-item {
     position: relative;
     color: #fff;
-    height: auto; }
+    height: auto;
+    display: block;
+    text-decoration: none; }
     @media screen and (min-width: 768px) {
       .gallery-item {
         height: auto; } }
@@ -4102,8 +4104,7 @@ hr {
     -moz-border-radius: 10px;
          border-radius: 10px;
     border: 1px solid #e7e7e7;
-    background-color: #ffffff;
-    text-transform: uppercase; }
+    background-color: #ffffff; }
     @media screen and (min-width: 992px) {
       .card-list {
         -moz-border-radius: 20px;
@@ -4112,7 +4113,8 @@ hr {
     .card-list span {
       font-size: 8px;
       letter-spacing: 1.54px;
-      display: block; }
+      display: block;
+      text-transform: uppercase; }
       @media screen and (min-width: 768px) {
         .card-list span {
           font-size: 11px; } }
