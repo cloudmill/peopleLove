@@ -90,10 +90,10 @@
       .accordion--border .accordion-header:hover::before {
         color: #ff7200; }
 
-.icons--corporate-1:before, .icons--corporate-2:before, .icons--corporate-3:before, .icons--corporate-4:before, .icons--guest-1:before, .icons--guest-2:before, .icons--guest-3:before, .icons--guest-4:before, .icons--guest-5:before, .icons--cond-1:before, .icons--cond-2:before, .icons--cond-3:before, .icons--cond-4:before, .icons--info:before, .icons--carto:before, .icons--cartw:before, .icons--cart:before, .icons--mail:before, .icons--phone:before, .icons--plane:before, .icons--arrowDown:before, .icons--arrowRight:before, .gallery-item .btn-abs.btn--primary:hover .icons:before {
+.icons--corporate-1:before, .icons--corporate-2:before, .icons--corporate-3:before, .icons--corporate-4:before, .icons--guest-1:before, .icons--guest-2:before, .icons--guest-3:before, .icons--guest-5:before, .icons--cond-1:before, .icons--cond-2:before, .icons--cond-3:before, .icons--cond-4:before, .icons--info:before, .icons--carto:before, .icons--cartw:before, .icons--cart:before, .icons--mail:before, .icons--phone:before, .icons--plane:before, .icons--arrowDown:before, .icons--arrowRight:before, .gallery-item .btn-abs.btn--primary:hover .icons:before {
   background-image: url("../images/svg/sprite.svg");
-  -moz-background-size: 82.4375em 5.25em;
-       background-size: 82.4375em 5.25em; }
+  -moz-background-size: 78.375em 5.25em;
+       background-size: 78.375em 5.25em; }
 
 .icons {
   display: inline-block; }
@@ -118,24 +118,20 @@
     background-position: -47.5625em -0.625em; }
   .icons--guest-1:before {
     width: 2.9375em;
-    height: 2.9375em;
+    height: 3.8125em;
     background-position: -52.0625em -0.625em; }
   .icons--guest-2:before {
-    width: 3em;
-    height: 3.8125em;
+    width: 2.9375em;
+    height: 2.5625em;
     background-position: -56.1875em -0.625em; }
   .icons--guest-3:before {
     width: 2.9375em;
-    height: 2.9375em;
-    background-position: -60.375em -0.625em; }
-  .icons--guest-4:before {
-    width: 2.8125em;
-    height: 2.8125em;
-    background-position: -64.5em -0.625em; }
+    height: 3em;
+    background-position: -60.3125em -0.625em; }
   .icons--guest-5:before {
     width: 3.3125em;
-    height: 2.8125em;
-    background-position: -68.5em -0.625em; }
+    height: 3.3125em;
+    background-position: -64.4375em -0.625em; }
   .icons--cond-1:before {
     width: 4.3125em;
     height: 2.5625em;
@@ -155,7 +151,7 @@
   .icons--info:before {
     width: 2.0625em;
     height: 2.0625em;
-    background-position: -73em -0.625em; }
+    background-position: -68.9375em -0.625em; }
   .icons--carto:before {
     width: 1.3125em;
     height: 1.625em;
@@ -171,15 +167,15 @@
   .icons--mail:before {
     width: 1.25em;
     height: 0.9375em;
-    background-position: -76.25em -0.625em; }
+    background-position: -72.1875em -0.625em; }
   .icons--phone:before {
     width: 0.9375em;
     height: 0.9375em;
-    background-position: -78.6875em -0.625em; }
+    background-position: -74.625em -0.625em; }
   .icons--plane:before {
     width: 1.0625em;
     height: 0.9375em;
-    background-position: -80.8125em -0.625em; }
+    background-position: -76.75em -0.625em; }
   .icons--arrowDown:before {
     width: 1.5625em;
     height: 0.75em;

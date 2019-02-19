@@ -4,6 +4,15 @@ $(document).ready(function () {
 
 	$('body').addClass('preloader-site');
 
+	$("html, body").animate({ scrollTop: 0 }, 200);
+
+	// FOR ERROR FORM
+	if ($('div').hasClass('error')) {
+		var position = $(".error").offset();
+		$("html, body").animate({ scrollTop: position.top - 100 }, 600);
+	}
+	// FOR ERROR FORM
+
 	// scrollToTop
 	$('.scrollup').fadeOut(500);
 	$(window).scroll(function () {
@@ -407,6 +416,11 @@ $(window).on("load resize", function () {
 		$(".objects-body-inner, .card-desc").mCustomScrollbar("destroy");
 	} else {
 		$(".objects-body-inner, .card-desc").mCustomScrollbar();
+	}
+	if (screenWidth <= 767) {
+		$('.gallery .gallery-inner, .gallery .gallery-item').click(function () {
+			return false;
+		});
 	}
 });
 
