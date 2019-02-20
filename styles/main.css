@@ -92,8 +92,8 @@
 
 .icons--corporate-1:before, .icons--corporate-2:before, .icons--corporate-3:before, .icons--corporate-4:before, .icons--guest-1:before, .icons--guest-2:before, .icons--guest-3:before, .icons--guest-5:before, .icons--cond-1:before, .icons--cond-2:before, .icons--cond-3:before, .icons--cond-4:before, .icons--info:before, .icons--carto:before, .icons--cartw:before, .icons--cart:before, .icons--mail:before, .icons--phone:before, .icons--plane:before, .icons--arrowDown:before, .icons--arrowRight:before, .gallery-item .btn-abs.btn--primary:hover .icons:before {
   background-image: url("../images/svg/sprite.svg");
-  -moz-background-size: 81.4375em 5.25em;
-       background-size: 81.4375em 5.25em; }
+  -moz-background-size: 78.375em 5.25em;
+       background-size: 78.375em 5.25em; }
 
 .icons {
   display: inline-block; }
@@ -117,21 +117,21 @@
     height: 3.9375em;
     background-position: -47.5625em -0.625em; }
   .icons--guest-1:before {
-    width: 4.125em;
-    height: 4.0625em;
+    width: 2.9375em;
+    height: 3.8125em;
     background-position: -52.0625em -0.625em; }
   .icons--guest-2:before {
     width: 2.9375em;
     height: 2.5625em;
-    background-position: -57.375em -0.625em; }
+    background-position: -56.1875em -0.625em; }
   .icons--guest-3:before {
-    width: 4.8125em;
-    height: 3.75em;
-    background-position: -61.5em -0.625em; }
+    width: 2.9375em;
+    height: 3em;
+    background-position: -60.3125em -0.625em; }
   .icons--guest-5:before {
     width: 3.3125em;
     height: 3.3125em;
-    background-position: -67.5em -0.625em; }
+    background-position: -64.4375em -0.625em; }
   .icons--cond-1:before {
     width: 4.3125em;
     height: 2.5625em;
@@ -151,7 +151,7 @@
   .icons--info:before {
     width: 2.0625em;
     height: 2.0625em;
-    background-position: -72em -0.625em; }
+    background-position: -68.9375em -0.625em; }
   .icons--carto:before {
     width: 1.3125em;
     height: 1.625em;
@@ -167,15 +167,15 @@
   .icons--mail:before {
     width: 1.25em;
     height: 0.9375em;
-    background-position: -75.25em -0.625em; }
+    background-position: -72.1875em -0.625em; }
   .icons--phone:before {
     width: 0.9375em;
     height: 0.9375em;
-    background-position: -77.6875em -0.625em; }
+    background-position: -74.625em -0.625em; }
   .icons--plane:before {
     width: 1.0625em;
     height: 0.9375em;
-    background-position: -79.8125em -0.625em; }
+    background-position: -76.75em -0.625em; }
   .icons--arrowDown:before {
     width: 1.5625em;
     height: 0.75em;
@@ -383,8 +383,7 @@
   max-width: 820px;
   margin: auto;
   padding: 10px;
-  background-color: #fff;
-  position: relative; }
+  background-color: #fff; }
   .white-popup-block h3 {
     font-size: 28px; }
     @media screen and (min-width: 768px) {
@@ -1380,8 +1379,6 @@ label a {
     font-size: 13px;
     font-weight: 400;
     color: #ff6769; }
-  label a {
-    margin-right: auto; }
 
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -3641,13 +3638,9 @@ hr {
       left: 10px;
       bottom: 15px;
       z-index: 10;
+      opacity: 0;
       text-align: center;
-      right: 10px;
-      display: none; }
-      @media screen and (min-width: 768px) {
-        .gallery-item .btn-abs {
-          display: block;
-          opacity: 0; } }
+      right: 10px; }
       @media screen and (min-width: 992px) {
         .gallery-item .btn-abs {
           bottom: 25px;
@@ -3664,11 +3657,6 @@ hr {
         height: 1.625em;
         background-position: -10.125em -0.625em;
         width: 1.5125em; }
-    .gallery-item.active .btn-abs {
-      display: block; }
-      @media screen and (min-width: 768px) {
-        .gallery-item.active .btn-abs {
-          display: none; } }
     @media screen and (max-width: 1489px) {
       .gallery-item .btn {
         padding: 10px 15px;
@@ -4237,12 +4225,14 @@ hr {
     .card-info span + span {
       margin-left: 10px; }
   .card-desc {
-    width: 100%; }
+    width: 100%;
+    padding: 0 25px; }
+    @media screen and (min-width: 1280px) {
+      .card-desc {
+        padding: 0;
+        width: 440px; } }
     .card-desc.mCustomScrollbar {
       width: auto; }
-    @media screen and (min-width: 480px) {
-      .card-desc {
-        padding: 0 25px; } }
     @media screen and (min-width: 768px) {
       .card-desc {
         height: 670px;
@@ -4251,10 +4241,6 @@ hr {
     @media screen and (min-width: 992px) {
       .card-desc {
         padding: 0 25px; } }
-    @media screen and (min-width: 1280px) {
-      .card-desc {
-        padding: 0;
-        width: 440px; } }
     @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
       .card-desc {
         height: 814px; } }
@@ -4269,8 +4255,6 @@ hr {
   .card .share-soc {
     margin-top: 20px;
     margin-bottom: 40px; }
-    .card .share-soc > div {
-      margin-bottom: 10px; }
   .card-item {
     text-decoration: none;
     display: block; }
@@ -4902,8 +4886,6 @@ hr {
         .category-item .breadcrumbs__item::before,
         .category-item .breadcrumbs__item.active {
           color: #fff; } }
-    .category-item #filters li:first-child {
-      margin-left: 5px; }
 
 @media screen and (min-width: 768px) {
   .catalog .mainSection-item:first-child {
@@ -4994,10 +4976,7 @@ h1 {
     margin-top: 0; }
   .guest-item {
     color: #fff;
-    position: relative;
-    display: block; }
-    .guest-item:hover {
-      color: #fff; }
+    position: relative; }
     .guest-item .inner {
       position: absolute;
       left: 15px;

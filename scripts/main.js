@@ -274,12 +274,7 @@ $(document).ready(function () {
 		}
 	});
 	$('.popup-modal').magnificPopup({
-		type: 'inline',
-		callbacks: {
-			open: function open() {
-				$('.gallery .gallery-item').removeClass('active');
-			}
-		}
+		type: 'inline'
 	});
 	$(document).on('click', '.popup-modal-dismiss', function (e) {
 		e.preventDefault();
@@ -423,17 +418,9 @@ $(window).on("load resize", function () {
 		$(".objects-body-inner, .card-desc").mCustomScrollbar();
 	}
 	if (screenWidth <= 767) {
-		(function () {
-			var used = undefined;
-			$(".gallery .gallery-item a").on("click", function (e) {
-				if (used !== this) {
-					used = this;e.preventDefault();
-					$(this).parent().addClass('active');
-				} else {
-					$('.gallery .gallery-item').removeClass('active');
-				}
-			});
-		})();
+		$('.gallery .gallery-inner, .gallery .gallery-item').click(function () {
+			return false;
+		});
 	}
 });
 
