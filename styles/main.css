@@ -1349,21 +1349,6 @@ legend {
   border: 0; }
 
 label {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 100%;
   margin-bottom: 10px;
   font-size: 15px;
@@ -1377,8 +1362,22 @@ label {
     font-size: 13px;
     font-weight: 400;
     color: #ff6769; }
-  label a {
-    margin-right: auto; }
+  .error label, label.label-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -3643,7 +3642,11 @@ hr {
       display: none; }
       @media screen and (min-width: 768px) {
         .gallery-item .btn-abs {
-          display: block;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
           opacity: 0; } }
       @media screen and (min-width: 992px) {
         .gallery-item .btn-abs {
@@ -3662,7 +3665,11 @@ hr {
         background-position: -10.125em -0.625em;
         width: 1.5125em; }
     .gallery-item.active .btn-abs {
-      display: block; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex; }
       @media screen and (min-width: 768px) {
         .gallery-item.active .btn-abs {
           display: none; } }
@@ -5048,6 +5055,8 @@ h1 {
           height: 107px;
           font-size: inherit;
           margin: 0 auto 20px; } }
+      .guest-list i.icons--guest-3 {
+        font-size: 13px; }
     .guest-list > * {
       margin-bottom: 15px;
       width: 48%; }
