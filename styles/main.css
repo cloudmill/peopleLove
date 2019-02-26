@@ -3443,13 +3443,7 @@ body.fixed {
        object-fit: contain; }
 
 .mainSection .gallery-item {
-  height: 140px; }
-  @media screen and (min-width: 480px) {
-    .mainSection .gallery-item {
-      height: 200px; } }
-  @media screen and (min-width: 768px) {
-    .mainSection .gallery-item {
-      height: auto; } }
+  height: auto; }
 
 .mainSection .gallery-column-f {
   width: 50%; }
@@ -3833,6 +3827,12 @@ hr {
 
 .icons--cart:before {
   width: 1.5125em; }
+
+@media screen and (max-width: 767px) {
+  .nonsquare .gallery-item {
+    height: 50vw; }
+    .nonsquare .gallery-item img {
+      height: 100%; } }
 
 @media screen and (min-width: 768px) {
   .page-index.fp-viewing-4 .fullpage-wrapper {
