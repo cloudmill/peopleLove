@@ -1485,7 +1485,8 @@ input[type="search"] {
     margin: 0;
     cursor: pointer;
     font-size: 13px;
-    font-weight: 400; }
+    font-weight: 400;
+    display: block; }
     @media screen and (min-width: 768px) {
       .radio label,
       .checkbox label {
@@ -2782,7 +2783,7 @@ blockquote {
         -moz-transition: 0.5s right;
         -o-transition: 0.5s right;
         transition: 0.5s right;
-        padding: 15px 30px;
+        padding: 15px 30px 30px 30px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
@@ -3567,22 +3568,18 @@ hr {
     .gallery-inner img {
       width: 17% !important;
       height: auto;
-      margin: 0 auto;
       display: block; }
       @media screen and (min-width: 480px) {
         .gallery-inner img {
           width: 21% !important; } }
       @media screen and (min-width: 768px) {
         .gallery-inner img {
-          width: 21% !important;
-          margin: 0 auto 10px; } }
+          width: 21% !important; } }
       @media screen and (min-width: 992px) {
         .gallery-inner img {
-          width: 20% !important;
-          margin: 0 auto 15px; } }
+          width: 20% !important; } }
       @media screen and (min-width: 1280px) {
         .gallery-inner img {
-          margin: 0 auto 25px;
           width: auto !important; } }
     .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle, .gallery-inner .share-soc {
       display: -webkit-box;
@@ -3624,11 +3621,34 @@ hr {
       .gallery-inner a:not(.btn):hover {
         text-decoration: underline; }
     .gallery-inner h5 {
+      margin: 0; }
+    .gallery-inner .img {
       margin-top: 6px;
-      height: 60px; }
+      height: 60px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       @media screen and (min-width: 768px) {
-        .gallery-inner h5 {
-          margin-top: 10px; } }
+        .gallery-inner .img {
+          margin: 10px auto; } }
+      @media screen and (min-width: 992px) {
+        .gallery-inner .img {
+          margin: 10px auto 15px; } }
+      @media screen and (min-width: 1280px) {
+        .gallery-inner .img {
+          margin: 10px auto 25px; } }
   .gallery-item {
     position: relative;
     color: #fff;
@@ -4523,13 +4543,10 @@ hr {
   height: 240px;
   position: relative;
   width: 100%; }
-  @media screen and (min-width: 480px) {
-    #mapOf,
-    #map {
-      width: 90%; } }
   @media screen and (min-width: 768px) {
     #mapOf,
     #map {
+      width: 90%;
       left: -33%;
       height: 550px; } }
   @media screen and (min-width: 1280px) {
@@ -4937,27 +4954,30 @@ hr {
     bottom: 20px;
     z-index: 99; } }
 
-#filters li {
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-  font-size: 14px;
-  margin-bottom: 10px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-right: 10px; }
-  @media screen and (min-width: 768px) {
-    #filters li {
-      font-size: 18px;
-      color: #fff;
-      margin-left: 20px;
-      margin-bottom: 0;
-      margin-right: 0; } }
-  @media screen and (min-width: 992px) {
-    #filters li {
-      margin-left: 30px; } }
-  #filters li:hover, #filters li.active {
-    color: #ff7200;
-    border-color: #ff7200; }
+#filters {
+  margin-bottom: 0; }
+  #filters li {
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 4px; }
+    @media screen and (min-width: 480px) {
+      #filters li {
+        margin-right: 10px; } }
+    @media screen and (min-width: 768px) {
+      #filters li {
+        font-size: 18px;
+        color: #fff;
+        margin-left: 20px;
+        margin-right: 0; } }
+    @media screen and (min-width: 992px) {
+      #filters li {
+        margin-left: 30px; } }
+    #filters li:hover, #filters li.active {
+      color: #ff7200;
+      border-color: #ff7200; }
 
 .white-popup-block .table tbody td {
   -webkit-box-flex: 1;
