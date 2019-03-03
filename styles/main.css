@@ -521,9 +521,6 @@ body.preloader-site {
      -moz-transform-style: preserve-3d;
           transform-style: preserve-3d; }
   .blobs .blob-center {
-    -webkit-transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
-            transform-style: preserve-3d;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1565,6 +1562,8 @@ input[type="search"] {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex; }
+  .input-inline--three .control, .input-inline--three .select2-container--default .select2-selection--single, .select2-container--default .input-inline--three .select2-selection--single {
+    width: 33%; }
   .input-inline .control:first-child, .input-inline .select2-container--default .select2-selection--single:first-child, .select2-container--default .input-inline .select2-selection--single:first-child {
     -moz-border-radius-topright: 0;
          border-top-right-radius: 0;
@@ -3489,7 +3488,7 @@ hr {
         -ms-flex-align: center;
             align-items: center; }
   .prices b, .prices .vacancy .accordion-item .accordion-content .subheader, .vacancy .accordion-item .accordion-content .prices .subheader {
-    width: 95px;
+    width: 120px;
     font-size: 30px; }
 
 .gallery {
@@ -4183,8 +4182,8 @@ hr {
           font-size: 16px; } }
     @media screen and (min-width: 768px) {
       .card-btn {
-        width: 58%; } }
-    @media screen and (min-width: 992px) {
+        width: 57%; } }
+    @media screen and (min-width: 1280px) {
       .card-btn {
         width: 63%; } }
   .card .swiper-btn {
@@ -4786,7 +4785,8 @@ hr {
     color: #ff7200; }
     @media screen and (min-width: 768px) {
       .cart-price {
-        font-size: 30px; } }
+        font-size: 30px;
+        width: 150px; } }
   .cart-count input {
     border: 0;
     width: 15px;
