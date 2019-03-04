@@ -149,6 +149,7 @@ $(document).ready(function () {
 	var lunch = new Swiper('.slider-lunch', {
 		slidesPerView: 1,
 		spaceBetween: 0,
+		autoHeight: true,
 		loop: true,
 		navigation: {
 			nextEl: '.swiper-btnL-next',
@@ -158,6 +159,7 @@ $(document).ready(function () {
 	var lunchS = new Swiper('.slider-lunchS', {
 		slidesPerView: 1,
 		spaceBetween: 0,
+		autoHeight: true,
 		loop: true,
 		navigation: {
 			nextEl: '.swiper-btnS-next',
@@ -167,6 +169,7 @@ $(document).ready(function () {
 	var lunchD = new Swiper('.slider-lunchD', {
 		slidesPerView: 1,
 		spaceBetween: 0,
+		autoHeight: true,
 		loop: true,
 		navigation: {
 			nextEl: '.swiper-btnD-next',
@@ -176,6 +179,7 @@ $(document).ready(function () {
 	var cards = new Swiper('.slider-cards', {
 		slidesPerView: 3,
 		spaceBetween: 10,
+		autoHeight: true,
 		loop: true,
 		navigation: {
 			nextEl: '.swiper-btn-next',
