@@ -1,5 +1,6 @@
 'use strict';
 // ready
+
 $(document).ready(function () {
 
 	$('body').addClass('preloader-site');
@@ -146,36 +147,6 @@ $(document).ready(function () {
 			}
 		}
 	});
-	var lunch = new Swiper('.slider-lunch', {
-		slidesPerView: 1,
-		spaceBetween: 0,
-		autoHeight: true,
-		loop: true,
-		navigation: {
-			nextEl: '.swiper-btnL-next',
-			prevEl: '.swiper-btnL-prev'
-		}
-	});
-	var lunchS = new Swiper('.slider-lunchS', {
-		slidesPerView: 1,
-		spaceBetween: 0,
-		autoHeight: true,
-		loop: true,
-		navigation: {
-			nextEl: '.swiper-btnS-next',
-			prevEl: '.swiper-btnS-prev'
-		}
-	});
-	var lunchD = new Swiper('.slider-lunchD', {
-		slidesPerView: 1,
-		spaceBetween: 0,
-		autoHeight: true,
-		loop: true,
-		navigation: {
-			nextEl: '.swiper-btnD-next',
-			prevEl: '.swiper-btnD-prev'
-		}
-	});
 	var cards = new Swiper('.slider-cards', {
 		slidesPerView: 3,
 		spaceBetween: 10,
@@ -222,6 +193,37 @@ $(document).ready(function () {
 			swiper: galleryThumbs
 		}
 	});
+	var lunch = new Swiper('.slider-lunch', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		autoHeight: true,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-btnL-next',
+			prevEl: '.swiper-btnL-prev'
+		}
+	});
+	var lunchS = new Swiper('.slider-lunchS', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		autoHeight: true,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-btnS-next',
+			prevEl: '.swiper-btnS-prev'
+		}
+	});
+	var lunchD = new Swiper('.slider-lunchD', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		autoHeight: true,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-btnD-next',
+			prevEl: '.swiper-btnD-prev'
+		}
+	});
+
 	// slider
 
 	//.select--js
@@ -326,10 +328,14 @@ $(document).ready(function () {
 	//form
 	$('.btn--js').click(function () {
 		$(this).closest('.form').addClass('sent');
+		var position = $(this).closest('.form').offset();
+		$("html, body").animate({ scrollTop: position.top }, 600); // scroll to the top or the form
 		return false; // TEMP
 	});
 	$(".sent--js").on("click", function () {
 		$(this).closest('.form').removeClass('sent');
+		var position = $(this).closest('.form').offset();
+		$("html, body").animate({ scrollTop: position.top - 50 }, 600); // scroll to the top or the form
 		return false;
 	});
 	//form
@@ -424,7 +430,45 @@ $(window).on("load resize", function () {
 	if (screenWidth <= 1024) {
 		$(".objects-body-inner, .card-desc").mCustomScrollbar("destroy");
 	} else {
-		$(".objects-body-inner, .card-desc").mCustomScrollbar();
+		$(".objects-body-inner, .card-desc").mCustomScrollbar({
+			callbacks: {
+				onInit: function onInit() {
+					var lunch = new Swiper('.slider-lunch', {
+						slidesPerView: 1,
+						spaceBetween: 0,
+						autoHeight: true,
+						loop: true,
+						navigation: {
+							nextEl: '.swiper-btnL-next',
+							prevEl: '.swiper-btnL-prev'
+						}
+					});
+					var lunchS = new Swiper('.slider-lunchS', {
+						slidesPerView: 1,
+						spaceBetween: 0,
+						autoHeight: true,
+						loop: true,
+						navigation: {
+							nextEl: '.swiper-btnS-next',
+							prevEl: '.swiper-btnS-prev'
+						}
+					});
+					var lunchD = new Swiper('.slider-lunchD', {
+						slidesPerView: 1,
+						spaceBetween: 0,
+						autoHeight: true,
+						loop: true,
+						navigation: {
+							nextEl: '.swiper-btnD-next',
+							prevEl: '.swiper-btnD-prev'
+						}
+					});
+					lunch.update();
+					lunchD.update();
+					lunchS.update();
+				}
+			}
+		});
 	}
 	if (screenWidth <= 767) {
 		(function () {
