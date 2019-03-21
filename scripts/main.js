@@ -380,47 +380,49 @@ $(document).ready(function () {
 	});
 	//isotop
 
-	var idToken = '3184899862.1677ed0.fa4ef83ae9a143ce851f9d20338b4512';
-	function sendUserRequest() {
-		var endpointUser = 'https://api.instagram.com/v1/users/self/';
-		var xhr = new XMLHttpRequest();
-		xhr.open('GET', endpointUser + '?access_token=' + encodeURIComponent(idToken));
-		xhr.onreadystatechange = function () {
-			if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-				var data = xhr.responseText;
-				var jsonResponse = JSON.parse(data);
-				var dataC = jsonResponse.data;
-				$('.instagram-userPhoto').html('<img src=' + dataC.profile_picture + ' alt="" />');
-				$('.instagram-userDesc-title').html('<p>' + dataC.username + '</p>');
-				$('.instagram-userDesc-media').html('<p><b>' + dataC.counts.media + '</b> публикаций</p>');
-				$('.instagram-userDesc-follows').html('<p><b>' + dataC.counts.follows + '</b> подписчиков</p>');
-				$('.instagram-userDesc-followed_by').html('<p><b>' + dataC.counts.followed_by + '</b> подписок</p>');
-				$('.instagram-userDesc-desc').text(dataC.bio);
-			}
-			if (this.status === 429) {
-				$('.instagram').html('<h5>Превышено максимальное количество запросов в час. Наш общий максимальный предел составляет 200 запросов в час</h5>');
-			}
-		};
-		xhr.send();
-	}
-	function sendPhotoRequest() {
-		var endpointPhoto = 'https://api.instagram.com/v1/users/self/media/recent/';
-		var xhr = new XMLHttpRequest();
-		xhr.open('GET', endpointPhoto + '?access_token=' + encodeURIComponent(idToken));
-		xhr.onreadystatechange = function () {
-			if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-				var data = xhr.responseText;
-				var jsonResponse = JSON.parse(data);
-				var dataC = jsonResponse.data;
-				for (var i = 0; i < 11; i++) {
-					$('.instagram-photo').append('<img src=' + dataC[i].images.thumbnail.url + ' alt=\'\' />');
-				}
-			}
-		};
-		xhr.send();
-	}
-	sendUserRequest();
-	sendPhotoRequest();
+	// const idToken = '3184899862.1677ed0.fa4ef83ae9a143ce851f9d20338b4512';
+	// function sendUserRequest () {
+	// 	const endpointUser = `https://api.instagram.com/v1/users/self/`;
+	// 	const xhr = new XMLHttpRequest();
+	// 	xhr.open('GET', endpointUser + '?access_token=' + encodeURIComponent(idToken));
+	// 	xhr.onreadystatechange = function () {
+	// 		if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+	// 			const data=xhr.responseText;
+	// 			const jsonResponse = JSON.parse(data);
+	// 			const dataC = jsonResponse.data;
+	// 			$('.instagram-userPhoto').html(`<img src=${dataC.profile_picture} alt="" />`);
+	// 			$('.instagram-userDesc-title').html(`<p>${dataC.username}</p>`);
+	// 			$('.instagram-userDesc-media').html(`<p><b>${dataC.counts.media}</b> публикаций</p>`);
+	// 			$('.instagram-userDesc-follows').html(`<p><b>${dataC.counts.follows}</b> подписчиков</p>`);
+	// 			$('.instagram-userDesc-followed_by').html(`<p><b>${dataC.counts.followed_by}</b> подписок</p>`);
+	// 			$('.instagram-userDesc-desc').text(dataC.bio);
+	// 		}
+	// 		if(this.status === 429) {
+	// 			$('.instagram').html('<h5>Превышено максимальное количество запросов в час. Наш общий максимальный предел составляет 200 запросов в час</h5>');
+	// 		}
+	// 	};
+	// 	xhr.send();
+	// }
+	// function sendPhotoRequest () {
+	// 	const endpointPhoto = `https://api.instagram.com/v1/users/self/media/recent/`;
+	// 	const xhr = new XMLHttpRequest();
+	// 	xhr.open('GET', endpointPhoto + '?access_token=' + encodeURIComponent(idToken));
+	// 	xhr.onreadystatechange = function () {
+	// 		if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+	// 			const data=xhr.responseText;
+	// 			const jsonResponse = JSON.parse(data);
+	// 			const dataC = jsonResponse.data;
+	// 			for(let i = 0; i < 11; i++) {
+	// 				$('.instagram-photo').append(`<img src=${dataC[i].images.thumbnail.url} alt='' />`);
+	// 			}
+	//
+	// 		}
+	// 	};
+	// 	xhr.send();
+	// }
+	// sendUserRequest();
+	// sendPhotoRequest();
+	//
 });
 // ready
 
