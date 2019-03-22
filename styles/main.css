@@ -3756,6 +3756,20 @@ hr {
       -moz-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
       transition: all 0.3s linear; }
+    .gallery-item-category {
+      color: #333; }
+      .gallery-item-category .gallery-inner {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        opacity: 1;
+        padding: 20px; }
+        .gallery-item-category .gallery-inner h5 {
+          margin: 0; }
+      .gallery-item-category:after {
+        background-color: rgba(255, 255, 255, 0.8); }
     .gallery-item.active, .gallery-item:hover {
       color: #333; }
       .gallery-item.active .btn-abs,
@@ -4155,6 +4169,15 @@ hr {
               justify-content: space-between; }
   .card-img {
     position: relative; }
+    .card-img:after {
+      content: '';
+      width: 5px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: white; }
     @media screen and (max-width: 991px) {
       .card-img {
         margin: 0 -15px; } }
@@ -4902,8 +4925,10 @@ hr {
     bottom: 20px;
     z-index: 99; } }
 
+#sort,
 #filters {
   margin-bottom: 0; }
+  #sort li,
   #filters li {
     border-bottom: 2px solid transparent;
     cursor: pointer;
@@ -4912,18 +4937,23 @@ hr {
     padding-right: 0;
     margin-right: 4px; }
     @media screen and (min-width: 480px) {
+      #sort li,
       #filters li {
         margin-right: 10px; } }
     @media screen and (min-width: 768px) {
+      #sort li,
       #filters li {
         font-size: 18px;
         color: #fff;
         margin-left: 20px;
         margin-right: 0; } }
     @media screen and (min-width: 992px) {
+      #sort li,
       #filters li {
         margin-left: 30px; } }
-    #filters li:hover, #filters li.active {
+    #sort li:hover, #sort li.active,
+    #filters li:hover,
+    #filters li.active {
       color: #ff7200;
       border-color: #ff7200; }
 
