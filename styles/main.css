@@ -3535,6 +3535,9 @@ hr {
       @media screen and (min-width: 1280px) {
         .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle {
           height: 50px; } }
+      @media screen and (max-width: 1489px) {
+        .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle {
+          height: 40px; } }
       .gallery-inner .flex .hidden__sm, .gallery-inner .card-lists .hidden__sm, .gallery-inner .card-add .hidden__sm, .gallery-inner .price .hidden__sm, .gallery-inner .price-item .hidden__sm, .price-item .gallery-inner .target .hidden__sm, .gallery-inner .contacts-title .hidden__sm, .gallery-inner .share-subtitle .hidden__sm {
         font-size: 11px;
         text-transform: uppercase; }
@@ -4913,9 +4916,9 @@ hr {
 
 @media screen and (min-width: 768px) {
   .catalog .mainSection-item:first-child {
-    min-height: -webkit-calc(80vh - 100px);
-    min-height: -moz-calc(80vh - 100px);
-    min-height: calc(80vh - 100px); }
+    min-height: -webkit-calc(100vh - 200px);
+    min-height: -moz-calc(100vh - 200px);
+    min-height: calc(100vh - 200px); }
   .catalogPage.catalog .mainSection-item:first-child {
     height: auto; } }
 
