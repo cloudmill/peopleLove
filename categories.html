@@ -195,9 +195,9 @@
           <div class="grid gallery">
             <div class="gallery-column-f grid-item bagets">
               <div class="gallery-item gallery-item-category"><a class="gallery-inner" href="#">
-                    <h5>
+                    <h4>
                       <div class="img"><img src="images/icons/icons-1.svg" alt=""></div><span>Багеты и чиабатта</span>
-                    </h5></a><img src="images/index/slide-11.jpg" alt="">
+                    </h4></a><img src="images/index/slide-11.jpg" alt="">
               </div>
             </div>
             <div class="gallery-column-f grid-item bagets">
@@ -235,9 +235,9 @@
             </div>
             <div class="gallery-column-f grid-item rye">
               <div class="gallery-item gallery-item-category"><a class="gallery-inner" href="#">
-                    <h5>
+                    <h4>
                       <div class="img"><img src="images/icons/icons-2.svg" alt=""></div><span>Ржаной</span>
-                    </h5></a><img src="images/index/slide-12.jpg" alt="">
+                    </h4></a><img src="images/index/slide-12.jpg" alt="">
               </div>
             </div>
             <div class="gallery-column-f grid-item rye">
@@ -277,9 +277,9 @@
             </div>
             <div class="gallery-column-f grid-item wheat">
               <div class="gallery-item gallery-item-category"><a class="gallery-inner" href="#">
-                    <h5>
+                    <h4>
                       <div class="img"><img src="images/icons/icons-3.svg" alt=""></div><span>Пшеничный</span>
-                    </h5></a><img src="images/index/slide-13.jpg" alt="">
+                    </h4></a><img src="images/index/slide-13.jpg" alt="">
               </div>
             </div>
             <div class="gallery-column-f grid-item wheat">
@@ -317,9 +317,9 @@
             </div>
             <div class="gallery-column-f grid-item ryewheat">
               <div class="gallery-item gallery-item-category"><a class="gallery-inner" href="#">
-                    <h5>
+                    <h4>
                       <div class="img"><img src="images/icons/icons-5.svg" alt=""></div><span>Ржано-пшеничный</span>
-                    </h5></a><img src="images/index/slide-15.jpg" alt="">
+                    </h4></a><img src="images/index/slide-15.jpg" alt="">
               </div>
             </div>
             <div class="gallery-column-f grid-item ryewheat">
@@ -346,9 +346,9 @@
             </div>
             <div class="gallery-column-f grid-item unstoppable">
               <div class="gallery-item gallery-item-category"><a class="gallery-inner" href="#">
-                    <h5>
+                    <h4>
                       <div class="img"><img src="images/icons/icons-2.svg" alt=""></div><span>Бездрожжевой</span>
-                    </h5></a><img src="images/index/slide-18.jpg" alt="">
+                    </h4></a><img src="images/index/slide-18.jpg" alt="">
               </div>
             </div>
             <div class="gallery-column-f grid-item unstoppable">
@@ -395,7 +395,14 @@
             <div class="is-col is-col__xl-8 is-col__lg-7 is-col__md-6 is-col__xs-12">
               <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
               <div id="vk_groups"></div>
-              <script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", color3: 'FF7200'}, 137545429);</script>
+              <script type="text/javascript">
+                function VK_Widget_Init() {
+                	document.getElementById('vk_groups').innerHTML = "";
+                	VK.Widgets.Group("vk_groups", {mode: 3, width: 'auto', color3: 'FF7200'}, 137545429);
+                };
+                window.addEventListener('load', VK_Widget_Init, false);
+                window.addEventListener('resize', VK_Widget_Init, false);
+              </script>
             </div>
             <div class="is-col is-col__xl-4 is-col__lg-5 is-col__md-6 is-col__xs-12">
               <div class="flex between__xs">

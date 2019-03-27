@@ -172,6 +172,9 @@ $(document).ready(function () {
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
 		breakpoints: {
+			1500: {
+				slidesPerView: 3
+			},
 			1280: {
 				slidesPerView: 2
 			},

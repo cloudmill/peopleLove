@@ -174,7 +174,7 @@
         <section class="card">
           <div class="container container-max">
             <div class="is-row between__xs relative">
-              <div class="is-col is-col__xl-7 is-col__md-6 is-col__xs-12">
+              <div class="is-col is-col__xl-7 is-col__xxl-6 is-col__md-6 is-col__xs-12">
                 <div class="card-img">
                   <div class="gallery-top swiper-container">
                     <div class="swiper-wrapper">
@@ -239,6 +239,7 @@
                     <div class="card-list"><span>углеводы</span><b>40 г</b></div>
                   </div>
                   <p class="text--gray">Калорийность продукта указана на 100гр</p>
+                  <div class="iconsBlock"><img src="images/icons/cardSvg-1.svg" alt=""><img src="images/icons/cardSvg-2.svg" alt=""><img src="images/icons/cardSvg-3.svg" alt=""><img src="images/icons/cardSvg-4.svg" alt=""></div>
                   <h6>описание:</h6>
                   <p>Химический состав хлеба с семечками содержит богатый и сбалансированный витаминно-минеральный комплекс, в нём представлены: холин, бета-каротин, витамины: А, В1, В2, В5, В6, В9, Е, Н и РР, а также необходимые организму минеральные вещества: калий, кальций, магний, цинк, селен, медь и марганец, железо, хлор и сера, йод, хром, фтор, молибден, бор и ванадий, кремний, кобальт, фосфор и натрий.</p>
                   <h6>Состав:</h6>
@@ -277,7 +278,14 @@
             <div class="is-col is-col__xl-8 is-col__lg-7 is-col__md-6 is-col__xs-12">
               <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
               <div id="vk_groups"></div>
-              <script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", color3: 'FF7200'}, 137545429);</script>
+              <script type="text/javascript">
+                function VK_Widget_Init() {
+                	document.getElementById('vk_groups').innerHTML = "";
+                	VK.Widgets.Group("vk_groups", {mode: 3, width: 'auto', color3: 'FF7200'}, 137545429);
+                };
+                window.addEventListener('load', VK_Widget_Init, false);
+                window.addEventListener('resize', VK_Widget_Init, false);
+              </script>
             </div>
             <div class="is-col is-col__xl-4 is-col__lg-5 is-col__md-6 is-col__xs-12">
               <div class="flex between__xs">

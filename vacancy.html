@@ -413,7 +413,14 @@
             <div class="is-col is-col__xl-8 is-col__lg-7 is-col__md-6 is-col__xs-12">
               <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
               <div id="vk_groups"></div>
-              <script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", color3: 'FF7200'}, 137545429);</script>
+              <script type="text/javascript">
+                function VK_Widget_Init() {
+                	document.getElementById('vk_groups').innerHTML = "";
+                	VK.Widgets.Group("vk_groups", {mode: 3, width: 'auto', color3: 'FF7200'}, 137545429);
+                };
+                window.addEventListener('load', VK_Widget_Init, false);
+                window.addEventListener('resize', VK_Widget_Init, false);
+              </script>
             </div>
             <div class="is-col is-col__xl-4 is-col__lg-5 is-col__md-6 is-col__xs-12">
               <div class="flex between__xs">

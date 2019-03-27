@@ -173,7 +173,9 @@
       <main class="page-main">
         <section class="mainSection catalog">
           <div class="mainSection-item hidden__xs hidden__sm">
-            <div class="scrollDown"><span>листайте <br> вниз</span><span class="icons icons--arrowDown"></span></div>
+            <div class="bottomIcons"><img src="images/icons/videoSvg-1.svg" alt=""><img src="images/icons/videoSvg-2.svg" alt="">
+              <div class="scrollDown"><span>листайте <br> вниз</span><span class="icons icons--arrowDown"></span></div><img src="images/icons/videoSvg-3.svg" alt=""><img src="images/icons/videoSvg-4.svg" alt="">
+            </div>
             <div class="mainSection-background">
               <video class="video" autoplay loop muted>
                 <source src="images/videoplayback.mp4" type="video/mp4">
@@ -184,20 +186,24 @@
             <div class="gallery">
               <div class="gallery-column-main nonsquare"><a class="gallery-item" href="#">
                   <div class="title">Хлеб</div>
-                  <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-2.jpg" alt=""></a></div>
-              <div class="gallery-column-long gallery-column-long--half"><a class="gallery-item" href="#">
+                  <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-2.jpg" alt=""></a><a class="gallery-item visible__xs visible__sm" href="#">
+                  <div class="title">Торты и пирожные</div>
+                  <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-3.jpg" alt=""></a></div>
+              <div class="gallery-column-long gallery-column-long--half hidden__xs hidden__sm"><a class="gallery-item" href="#">
                   <div class="title">Торты и пирожные</div>
                   <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-3.jpg" alt=""></a><a class="gallery-item" href="#">
                   <div class="title">Пироги <br> и пирожки</div>
                   <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-4.jpg" alt=""></a></div>
-              <div class="gallery-column-squad is-col__md-7"><a class="gallery-item" href="#">
+              <div class="gallery-column-squad is-col__md-7 is-col__xs-12"><a class="gallery-item visible__xs visible__sm" href="#">
+                  <div class="title">Пироги <br> и пирожки</div>
+                  <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-4.jpg" alt=""></a><a class="gallery-item" href="#">
                   <div class="title">Слойка</div>
                   <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-5.jpg" alt=""></a><a class="gallery-item" href="#">
                   <div class="title">Сдоба, кексы</div>
                   <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-5.jpg" alt=""></a><a class="gallery-item" href="#">
                   <div class="title">Напитки</div>
                   <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-9.jpg" alt=""></a></div>
-              <div class="gallery-column-long is-col__md-5"><a class="gallery-item" href="#">
+              <div class="gallery-column-long is-col__md-5 is-col__xs-12"><a class="gallery-item" href="#">
                   <div class="title">Кухня</div>
                   <div class="link"><span>подробнее</span><i class="icon-right-open"></i></div><img src="images/index/slide-4.jpg" alt=""></a></div>
             </div>
@@ -440,7 +446,14 @@
             <div class="is-col is-col__xl-8 is-col__lg-7 is-col__md-6 is-col__xs-12">
               <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
               <div id="vk_groups"></div>
-              <script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", color3: 'FF7200'}, 137545429);</script>
+              <script type="text/javascript">
+                function VK_Widget_Init() {
+                	document.getElementById('vk_groups').innerHTML = "";
+                	VK.Widgets.Group("vk_groups", {mode: 3, width: 'auto', color3: 'FF7200'}, 137545429);
+                };
+                window.addEventListener('load', VK_Widget_Init, false);
+                window.addEventListener('resize', VK_Widget_Init, false);
+              </script>
             </div>
             <div class="is-col is-col__xl-4 is-col__lg-5 is-col__md-6 is-col__xs-12">
               <div class="flex between__xs">
