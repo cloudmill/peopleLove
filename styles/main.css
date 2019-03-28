@@ -3816,16 +3816,30 @@ hr {
     .gallery-item-category {
       color: #333; }
       .gallery-item-category .gallery-inner {
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-           -moz-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+           -moz-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         opacity: 1;
         padding: 20px; }
         @media screen and (min-width: 768px) {
-          .gallery-item-category .gallery-inner h4 {
-            margin: 0 0 50px; } }
+          .gallery-item-category .gallery-inner {
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+               -moz-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; } }
+        @media screen and (max-width: 767px) and (orientation: portrait) {
+          .gallery-item-category .gallery-inner .img {
+            height: 50px; }
+            .gallery-item-category .gallery-inner .img img {
+              width: 20% !important; } }
+        .gallery-item-category .gallery-inner h4 {
+          margin-top: 0; }
+          @media screen and (min-width: 768px) {
+            .gallery-item-category .gallery-inner h4 {
+              margin: 0 0 50px; } }
       .gallery-item-category:after {
         background: url("../images/icons/line.svg") no-repeat center, rgba(255, 255, 255, 0.8); }
     .gallery-item.active, .gallery-item:hover {
@@ -3852,6 +3866,16 @@ hr {
     height: 50vw; }
     .nonsquare .gallery-item img {
       height: 100%; } }
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .gallery-inner h5 {
+    font-size: 19px;
+    margin: auto; }
+  .gallery-item-category .gallery-inner h4 {
+    margin: auto;
+    font-size: 22px; }
+  .gallery-item-category .gallery-inner .img {
+    margin-top: -52px; } }
 
 @media screen and (min-width: 768px) {
   .page-index.fp-viewing-4 .fullpage-wrapper {
