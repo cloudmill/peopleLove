@@ -1855,7 +1855,7 @@ h4, .delta {
   font-size: 16px; }
   @media screen and (min-width: 768px) {
     h4, .delta {
-      font-size: 19.2px; } }
+      font-size: 16.8px; } }
   @media screen and (min-width: 992px) {
     h4, .delta {
       font-size: 24px; } }
@@ -3674,11 +3674,8 @@ hr {
           opacity: 0; } }
       @media screen and (min-width: 992px) {
         .gallery-item .btn-abs {
-          bottom: 25px;
+          bottom: 30px;
           right: auto; } }
-      @media screen and (min-width: 1280px) {
-        .gallery-item .btn-abs {
-          bottom: 30px; } }
       @media screen and (min-width: 1500px) {
         .gallery-item .btn-abs {
           left: 15px;
@@ -3823,33 +3820,23 @@ hr {
     .gallery-item-category {
       color: #333; }
       .gallery-item-category .gallery-inner {
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-           -moz-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        opacity: 1;
-        padding: 20px; }
-        @media screen and (min-width: 768px) {
-          .gallery-item-category .gallery-inner {
-            -webkit-box-pack: center;
-            -webkit-justify-content: center;
-               -moz-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center; } }
+        opacity: 1; }
         @media screen and (max-width: 767px) and (orientation: portrait) {
           .gallery-item-category .gallery-inner .img {
             height: 50px; }
             .gallery-item-category .gallery-inner .img img {
               width: 20% !important; } }
         .gallery-item-category .gallery-inner h4 {
-          margin-top: 0; }
+          margin: 8px 0 0; }
           @media screen and (min-width: 768px) {
             .gallery-item-category .gallery-inner h4 {
-              margin: 0 0 50px; } }
-          @media screen and (min-width: 1650px) {
+              margin: -5px 0 0; } }
+          @media screen and (min-width: 992px) and (max-width: 991px) {
             .gallery-item-category .gallery-inner h4 {
-              margin: 0 0 100px; } }
+              margin: -10px 0 0; } }
+          @media screen and (min-width: 992px) {
+            .gallery-item-category .gallery-inner h4 {
+              margin: -5px 0 0; } }
       .gallery-item-category:after {
         background: url("../images/icons/line.svg") no-repeat center, rgba(255, 255, 255, 0.8); }
     .gallery-item.active, .gallery-item:hover {
