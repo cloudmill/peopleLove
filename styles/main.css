@@ -3545,6 +3545,9 @@ hr {
         padding: 60px 10px 30px; } }
     @media screen and (min-width: 1500px) {
       .gallery-inner {
+        padding: 70px 15px 20px; } }
+    @media screen and (min-width: 1650px) {
+      .gallery-inner {
         padding: 70px 25px 40px; } }
     .gallery-inner img {
       width: 17% !important;
@@ -3677,6 +3680,10 @@ hr {
         .gallery-item .btn-abs {
           bottom: 30px; } }
       @media screen and (min-width: 1500px) {
+        .gallery-item .btn-abs {
+          left: 15px;
+          bottom: 20px; } }
+      @media screen and (min-width: 1650px) {
         .gallery-item .btn-abs {
           left: 25px;
           bottom: 40px; } }
