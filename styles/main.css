@@ -3847,6 +3847,9 @@ hr {
           @media screen and (min-width: 768px) {
             .gallery-item-category .gallery-inner h4 {
               margin: 0 0 50px; } }
+          @media screen and (min-width: 1650px) {
+            .gallery-item-category .gallery-inner h4 {
+              margin: 0 0 100px; } }
       .gallery-item-category:after {
         background: url("../images/icons/line.svg") no-repeat center, rgba(255, 255, 255, 0.8); }
     .gallery-item.active, .gallery-item:hover {
