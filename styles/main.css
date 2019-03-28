@@ -2249,7 +2249,7 @@ blockquote {
 .is-col__xs-5 {
   width: 41.66667%; }
 
-.is-col__xs-6, .gallery-column-main > a.gallery-item, .gallery-column-long > a, .gallery-column-squad > a {
+.is-col__xs-6, .gallery-column-squad > a {
   width: 50%; }
 
 .is-col__xs-7 {
@@ -2267,7 +2267,7 @@ blockquote {
 .is-col__xs-11 {
   width: 91.66667%; }
 
-.is-col__xs-12, .bottomIcons {
+.is-col__xs-12, .bottomIcons, .gallery-column-main > a.gallery-item, .gallery-column-long > a {
   width: 100%; }
 
 .start__xs {
@@ -2454,7 +2454,7 @@ blockquote {
     width: 83.33333%; }
   .is-col__md-11 {
     width: 91.66667%; }
-  .is-col__md-12, .gallery-column-main > a.gallery-item, .gallery-column-long > a {
+  .is-col__md-12 {
     width: 100%; }
   .start__md {
     -webkit-box-pack: start;
