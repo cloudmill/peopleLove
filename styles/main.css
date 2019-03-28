@@ -5011,9 +5011,9 @@ hr {
 
 @media screen and (min-width: 768px) {
   .catalog .mainSection-item:first-child {
-    min-height: -webkit-calc(80vh - 100px) !important;
-    min-height: -moz-calc(80vh - 100px) !important;
-    min-height: calc(80vh - 100px) !important; }
+    min-height: -webkit-calc(100vh - 100px - 10vw) !important;
+    min-height: -moz-calc(100vh - 100px - 10vw) !important;
+    min-height: calc(100vh - 100px - 10vw) !important; }
   .catalogPage.catalog .mainSection-item:first-child {
     height: auto; } }
 
