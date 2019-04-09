@@ -95,6 +95,24 @@
   -moz-background-size: 81.4375em 5.25em;
        background-size: 81.4375em 5.25em; }
 
+.image-ie {
+  display: none; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .blob {
+    -webkit-animation: none !important;
+       -moz-animation: none !important;
+            animation: none !important;
+    -webkit-transform: none !important;
+       -moz-transform: none !important;
+        -ms-transform: none !important;
+         -o-transform: none !important;
+            transform: none !important; }
+  #vk_groups {
+    display: none !important; }
+  .image-ie {
+    display: block; } }
+
 .icons {
   display: inline-block; }
   .icons:before {
@@ -520,6 +538,8 @@ body.preloader-site {
   -webkit-transform-style: preserve-3d;
      -moz-transform-style: preserve-3d;
           transform-style: preserve-3d; }
+  .blobs img {
+    width: 100%; }
   .blobs .blob-center {
     position: absolute;
     top: 50%;
@@ -1112,7 +1132,7 @@ img {
   clip: rect(0, 0, 0, 0);
   overflow: hidden; }
 
-.flex, .card-lists, .card-add, .price, .price-item, .price-item .target, .contacts-title, .share-subtitle {
+.flex, .card-lists, .card-add, .price, .price-item, .price-item .target, .contacts-title, .share-subtitle, .works-review-img {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2298,7 +2318,7 @@ blockquote {
       -ms-flex-align: start;
           align-items: flex-start; }
 
-.middle__xs, .table tfoot td, .about .number, .swiper-btn, .card-info, .price, .price-item, .price-item .target, .contacts-title, .corporate-workers i, .corporate-contacts .is-col, .corporate-contacts i, .news-title, .guest-list i, .share-subtitle, .share-soc, .share-soc a {
+.middle__xs, .table tfoot td, .about .number, .swiper-btn, .card-info, .price, .price-item, .price-item .target, .contacts-title, .corporate-workers i, .corporate-contacts .is-col, .corporate-contacts i, .news-title, .guest-list i, .share-subtitle, .share-soc, .share-soc a, .works-review-img {
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
@@ -2317,7 +2337,7 @@ blockquote {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
 
-.between__xs, .card-lists, .card-add, .lunch-item, .contacts-title, .corporate-inner, .share-soc {
+.between__xs, .card-lists, .card-add, .lunch-item, .contacts-title, .corporate-inner, .share-soc, .works-review-img {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
      -moz-box-pack: justify;
@@ -2474,7 +2494,7 @@ blockquote {
        -moz-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-  .top__md {
+  .top__md, .works-review-img {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
        -moz-box-align: start;
@@ -3141,10 +3161,10 @@ button.close {
     .page-footer__logo img {
       width: 60px;
       margin-left: 5px; }
-  .page-footer .flex, .page-footer .card-lists, .page-footer .card-add, .page-footer .price, .page-footer .price-item, .page-footer .price-item .target, .price-item .page-footer .target, .page-footer .contacts-title, .page-footer .share-subtitle {
+  .page-footer .flex, .page-footer .card-lists, .page-footer .card-add, .page-footer .price, .page-footer .price-item, .page-footer .price-item .target, .price-item .page-footer .target, .page-footer .contacts-title, .page-footer .share-subtitle, .page-footer .works-review-img {
     margin: 30px 0; }
     @media screen and (min-width: 992px) {
-      .page-footer .flex, .page-footer .card-lists, .page-footer .card-add, .page-footer .price, .page-footer .price-item, .page-footer .price-item .target, .price-item .page-footer .target, .page-footer .contacts-title, .page-footer .share-subtitle {
+      .page-footer .flex, .page-footer .card-lists, .page-footer .card-add, .page-footer .price, .page-footer .price-item, .page-footer .price-item .target, .price-item .page-footer .target, .page-footer .contacts-title, .page-footer .share-subtitle, .page-footer .works-review-img {
         margin: 0; } }
 
 .margbot60 {
@@ -3602,7 +3622,7 @@ hr {
       @media screen and (min-width: 1320px) {
         .gallery-inner img {
           width: auto !important; } }
-    .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle {
+    .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle, .gallery-inner .works-review-img {
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-box;
@@ -3619,7 +3639,7 @@ hr {
           -ms-flex-align: center;
               align-items: center; }
       @media screen and (min-width: 992px) {
-        .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle {
+        .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle, .gallery-inner .works-review-img {
           height: 30px;
           -webkit-box-pack: justify;
           -webkit-justify-content: space-between;
@@ -3627,19 +3647,19 @@ hr {
               -ms-flex-pack: justify;
                   justify-content: space-between; } }
       @media screen and (min-width: 1320px) {
-        .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle {
+        .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle, .gallery-inner .works-review-img {
           height: 50px; } }
       @media screen and (max-width: 1489px) {
-        .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle {
+        .gallery-inner .flex, .gallery-inner .card-lists, .gallery-inner .card-add, .gallery-inner .price, .gallery-inner .price-item, .gallery-inner .price-item .target, .price-item .gallery-inner .target, .gallery-inner .contacts-title, .gallery-inner .share-subtitle, .gallery-inner .works-review-img {
           height: 40px; } }
-      .gallery-inner .flex .hidden__sm, .gallery-inner .card-lists .hidden__sm, .gallery-inner .card-add .hidden__sm, .gallery-inner .price .hidden__sm, .gallery-inner .price-item .hidden__sm, .price-item .gallery-inner .target .hidden__sm, .gallery-inner .contacts-title .hidden__sm, .gallery-inner .share-subtitle .hidden__sm {
+      .gallery-inner .flex .hidden__sm, .gallery-inner .card-lists .hidden__sm, .gallery-inner .card-add .hidden__sm, .gallery-inner .price .hidden__sm, .gallery-inner .price-item .hidden__sm, .price-item .gallery-inner .target .hidden__sm, .gallery-inner .contacts-title .hidden__sm, .gallery-inner .share-subtitle .hidden__sm, .gallery-inner .works-review-img .hidden__sm {
         font-size: 11px;
         text-transform: uppercase; }
         @media screen and (min-width: 1320px) {
-          .gallery-inner .flex .hidden__sm, .gallery-inner .card-lists .hidden__sm, .gallery-inner .card-add .hidden__sm, .gallery-inner .price .hidden__sm, .gallery-inner .price-item .hidden__sm, .price-item .gallery-inner .target .hidden__sm, .gallery-inner .contacts-title .hidden__sm, .gallery-inner .share-subtitle .hidden__sm {
+          .gallery-inner .flex .hidden__sm, .gallery-inner .card-lists .hidden__sm, .gallery-inner .card-add .hidden__sm, .gallery-inner .price .hidden__sm, .gallery-inner .price-item .hidden__sm, .price-item .gallery-inner .target .hidden__sm, .gallery-inner .contacts-title .hidden__sm, .gallery-inner .share-subtitle .hidden__sm, .gallery-inner .works-review-img .hidden__sm {
             font-size: 13px;
             letter-spacing: 1.92px; } }
-        .gallery-inner .flex .hidden__sm .icon-right-open, .gallery-inner .card-lists .hidden__sm .icon-right-open, .gallery-inner .card-add .hidden__sm .icon-right-open, .gallery-inner .price .hidden__sm .icon-right-open, .gallery-inner .price-item .hidden__sm .icon-right-open, .price-item .gallery-inner .target .hidden__sm .icon-right-open, .gallery-inner .contacts-title .hidden__sm .icon-right-open, .gallery-inner .share-subtitle .hidden__sm .icon-right-open {
+        .gallery-inner .flex .hidden__sm .icon-right-open, .gallery-inner .card-lists .hidden__sm .icon-right-open, .gallery-inner .card-add .hidden__sm .icon-right-open, .gallery-inner .price .hidden__sm .icon-right-open, .gallery-inner .price-item .hidden__sm .icon-right-open, .price-item .gallery-inner .target .hidden__sm .icon-right-open, .gallery-inner .contacts-title .hidden__sm .icon-right-open, .gallery-inner .share-subtitle .hidden__sm .icon-right-open, .gallery-inner .works-review-img .hidden__sm .icon-right-open {
           color: #ff7200; }
     .gallery-inner a:not(.btn) {
       text-transform: uppercase;
@@ -4196,6 +4216,11 @@ hr {
        -moz-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100px;
     width: 50%;
     margin-bottom: 25px; }
@@ -4513,7 +4538,7 @@ hr {
       font-size: 18px; }
   .lunch-desc {
     width: 63%; }
-    .lunch-desc .flex, .lunch-desc .card-lists, .lunch-desc .card-add, .lunch-desc .price, .lunch-desc .price-item, .lunch-desc .price-item .target, .price-item .lunch-desc .target, .lunch-desc .contacts-title, .lunch-desc .share-subtitle {
+    .lunch-desc .flex, .lunch-desc .card-lists, .lunch-desc .card-add, .lunch-desc .price, .lunch-desc .price-item, .lunch-desc .price-item .target, .price-item .lunch-desc .target, .lunch-desc .contacts-title, .lunch-desc .share-subtitle, .lunch-desc .works-review-img {
       width: 99%; }
 
 .relative {
@@ -5752,8 +5777,14 @@ p img + span {
   @media screen and (min-width: 992px) {
     .works-review {
       margin: 80px 0; } }
-  .works-review-img img {
-    width: 100%; }
+  .works-review-img {
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .works-review-img {
+        margin-bottom: 0; } }
+    @media screen and (min-width: 768px) {
+      .works-review-img img {
+        width: 100%; } }
   .works-review h3 {
     margin-bottom: 20px; }
     @media screen and (min-width: 768px) {
@@ -5795,3 +5826,16 @@ p img + span {
       @media screen and (max-width: 767px) {
         .works-review .blockqoute:before {
           display: none; } }
+
+.works-review .swiper-navigation {
+  width: 160px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
