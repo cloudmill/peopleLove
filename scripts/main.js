@@ -332,7 +332,7 @@ $(document).ready(function () {
 	$('.btn--js').click(function () {
 		$(this).closest('.form').addClass('sent');
 		var position = $(this).closest('.form').offset();
-		$("html, body").animate({ scrollTop: position.top }, 600); // scroll to the top or the form
+		$("html, body").animate({ scrollTop: position.top - 100 }, 600); // scroll to the top or the form
 		return false; // TEMP
 	});
 	$(".sent--js").on("click", function () {
