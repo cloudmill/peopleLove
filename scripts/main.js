@@ -245,17 +245,10 @@ $(document).ready(function () {
 	// select
 
 	// type file
-	$(function () {
-		var inner = $('.file_upload .button');
-		var wrapper = $(".file_upload"),
-		    inp = wrapper.find("input");
-		var file_api = window.File && window.FileReader && window.FileList && window.Blob ? true : false;
-		inp.change(function () {
-			var file_name = undefined;
-			if (file_api && inp[0].files[0]) file_name = inp[0].files[0].name;else file_name = inp.val().replace("C:\\fakepath\\", '');
-			if (!file_name.length) return;
-			inner.text(file_name);
-		}).change();
+	var button = $('.file_upload .button');
+	var input = $(".file_upload input");
+	input.change(function () {
+		if ($(this).val() != '') button.text($(this).val().replace("C:\\fakepath\\", ''));
 	});
 	// type file
 
