@@ -2824,7 +2824,7 @@ blockquote {
         -moz-transition: 0.5s right;
         -o-transition: 0.5s right;
         transition: 0.5s right;
-        padding: 15px 30px 80px 30px;
+        padding: 15px 30px 120px 30px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
@@ -3623,7 +3623,7 @@ hr {
           width: 21% !important; } }
       @media screen and (min-width: 768px) {
         .gallery-inner img {
-          width: 66% !important; } }
+          width: 75% !important; } }
       @media screen and (min-width: 992px) {
         .gallery-inner img {
           width: 45% !important; } }
@@ -3679,8 +3679,11 @@ hr {
         text-transform: uppercase; }
         @media screen and (min-width: 1320px) {
           .gallery-inner .flex .hidden__sm, .gallery-inner .card-lists .hidden__sm, .gallery-inner .card-add .hidden__sm, .gallery-inner .price .hidden__sm, .gallery-inner .price-item .hidden__sm, .price-item .gallery-inner .target .hidden__sm, .gallery-inner .contacts-title .hidden__sm, .gallery-inner .share-subtitle .hidden__sm, .gallery-inner .works-review-img .hidden__sm {
-            font-size: 13px;
+            font-size: 12px;
             letter-spacing: 1.92px; } }
+        @media screen and (min-width: 1490px) {
+          .gallery-inner .flex .hidden__sm, .gallery-inner .card-lists .hidden__sm, .gallery-inner .card-add .hidden__sm, .gallery-inner .price .hidden__sm, .gallery-inner .price-item .hidden__sm, .price-item .gallery-inner .target .hidden__sm, .gallery-inner .contacts-title .hidden__sm, .gallery-inner .share-subtitle .hidden__sm, .gallery-inner .works-review-img .hidden__sm {
+            font-size: 13px; } }
         .gallery-inner .flex .hidden__sm .icon-right-open, .gallery-inner .card-lists .hidden__sm .icon-right-open, .gallery-inner .card-add .hidden__sm .icon-right-open, .gallery-inner .price .hidden__sm .icon-right-open, .gallery-inner .price-item .hidden__sm .icon-right-open, .price-item .gallery-inner .target .hidden__sm .icon-right-open, .gallery-inner .contacts-title .hidden__sm .icon-right-open, .gallery-inner .share-subtitle .hidden__sm .icon-right-open, .gallery-inner .works-review-img .hidden__sm .icon-right-open {
           color: #ff7200; }
     .gallery-inner a:not(.btn) {
@@ -3855,10 +3858,18 @@ hr {
       @media screen and (min-width: 768px) {
         .gallery-item .link {
           left: 30px;
-          bottom: 30px; } }
+          bottom: 30px;
+          width: 30px;
+          height: 30px; } }
+      @media screen and (min-width: 992px) {
+        .gallery-item .link {
+          width: 40px;
+          height: 40px; } }
       @media screen and (min-width: 1320px) {
         .gallery-item .link {
-          padding: 11px 15px; } }
+          padding: 11px 15px;
+          width: 50px;
+          height: 50px; } }
       .gallery-item .link span {
         width: 0;
         overflow: hidden;
@@ -3870,9 +3881,6 @@ hr {
         -moz-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         transition: all 0.3s linear; }
-        @media screen and (min-width: 1320px) {
-          .gallery-item .link span {
-            font-size: 12px; } }
       .gallery-item .link :before {
         margin: 0; }
       .gallery-item .link:hover {
@@ -3907,13 +3915,18 @@ hr {
           margin: 8px 0 0; }
           @media screen and (min-width: 768px) {
             .gallery-item-category .gallery-inner h4 {
-              margin: -5px 0 0; } }
+              margin: -5px 0 0;
+              font-size: 16px; } }
           @media screen and (min-width: 992px) and (max-width: 991px) {
             .gallery-item-category .gallery-inner h4 {
               margin: -10px 0 0; } }
           @media screen and (min-width: 992px) {
             .gallery-item-category .gallery-inner h4 {
-              margin: -5px 0 0; } }
+              margin: -5px 0 0;
+              font-size: 21px; } }
+          @media screen and (min-width: 1320px) {
+            .gallery-item-category .gallery-inner h4 {
+              font-size: 24px; } }
       .gallery-item-category:after {
         background: url("../images/icons/line.svg") no-repeat center, rgba(255, 255, 255, 0.8); }
     .gallery-item.active, .gallery-item:hover {
